@@ -1,0 +1,113 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  /* background-color: cornsilk; */
+  color: rgb(54, 53, 53);
+  font-size: 18px;
+}
+iframe{
+  width: 100vw;
+  height: 30vw;
+  border: none;
+  margin-bottom: -2vw;
+}
+.menu_btn{
+  color: white;
+}
+.back_img{
+  background-image: url("/images/tlo1.JPG");
+  background-color: white;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 85vh;
+  margin-top: -10vh;
+
+}
+
+img{
+  width: 100%;
+}
+h2 {
+  background-color: rgb(29, 22, 22);
+  width: 100%;
+  padding: 5px;
+  color: cornsilk;
+}
+
+.row {
+margin-bottom: 5%;
+}
+
+/* .ukryj{
+  display: none;
+} */
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: gray;
+  opacity: 0.7;
+  color: white;
+  cursor: pointer;
+  width: 5%;
+  height: 10%;
+  border-radius: 50%;
+}
+
+#myBtn:hover {
+  /* background-color: #555; */
+  opacity: 1;
+}
+
+#myBtn i{
+  font-size: 36px;
+}
+
+.menu2{
+  text-align: center;
+}
+p{
+  padding-top: 4vw;
+}
+ul{
+  /* padding-top: 5vw;  */
+  list-style: none;
+}
+
+li{
+  margin-bottom: 5px;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  
+}
+
+li:nth-child(1){
+  background-color: rgb(94, 50, 10)
+}
+
+li:nth-child(2){
+  background-color: chocolate
+}
+
+li:nth-child(3){
+  background-color: darkgreen
+}
+
+li:nth-child(4){
+  background-color: darkblue
+}
+
+.container{
+  margin-top: 5%;
+}

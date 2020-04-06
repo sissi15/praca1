@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+    <!-- W3 sidebar -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="/styles/index.css">
+    <link rel="stylesheet" href="/styles/buildings.css">
+    <link rel="stylesheet" href="/styles/list.css">
+
+    <title>Zabytki</title>
+</head>
+
+<body>
+
+    <!-- Sidebar -->
+    <div class="w3-sidebar w3-bar-block w3-animate-left w3-center" id="mySidebar">
+        <button onclick="w3_close()" class="w3-bar-item w3-button w3-large ">Zamknij &times;</button>
+        <a href="/index.html" class="w3-bar-item w3-button">Strona główna</a>
+        <a href="/buildings.html" class="w3-bar-item w3-button">Zabytki</a>
+        <a href="/contact.html" class="w3-bar-item w3-button">Kontakt</a>
+        <a href="/links.html" class="w3-bar-item w3-button">Bibliografia</a>
+    </div>
+
+    <!-- Page Content -->
+    <button class="w3-button menu_btn" onclick="w3_open()" id="burger">☰</button>
+
+    <div class="back_img">
+        <h1>
+            Zabytki
+        </h1>
+    </div>
+
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-angle-double-up"></i></button>
+
+
+    <!-- przycisk do góry, menu na zasadzie kliknij i rozwiń , pudełka i menu odwołujące soę do id na tej samej stronie  -->
+    <div class="container-fluid">
+
+        <!-- Markt -->
+        <div class="row" id="markt">
+            <div class="col-lg-6">
+                <img src="/images/markt.JPG" alt="" />
+            </div>
+            <div class="col-lg-6">
+                <h3 id="markt">Markt</h3>
+                <p>Markt stanowi jeden z dwóch głównych placów w mieście. Jest otoczony urokliwymi budynkami. Jednak
+                    najważniejszym elementem placu jest dzwonnica Belfort. Dzwonnica pochodzi z czasów, gdy Brugia
+                    była w rozkwicie i jest symbolem obywatelskiej dumy i miejskiej niezależności. U podnóża wieży
+                    znajduje się dziedziniec, na którym kiedyś odbywał się najważniejszy jarmark miejski. W
+                    centralnym punkcie placu znajduje się pomnik dwóch lokalnych bohaterów, Jana Breydla oraz
+                    Pietera de Conincka. W 1302 roku przewodzili oni powstaniu mieszczan przeciwko tyrańskiej władzy
+                    francuskiego króla i walczyli o wolność Flandrii.</p>
+            </div>
+        </div>
+
+        <!-- Burg -->
+        <div class="row" id="burg">
+            <div class="col-lg-6">
+                <img src="/images/burg.JPG" alt="" />
+            </div>
+            <div class="col-lg-6">
+                <h3>Burg</h3>
+                <p>Drugi najważniejszy plac na starym mieście. Stanowi centrum administracyjne Brugii. Znajduje się
+                    tu ratusz, z pięknie zdobioną wieżyczkami fasadą. Elewacja tego budynku pochodzi z 1376 roku.
+                    Dodatkowo ratusz jest ozdobiony posągami hrabiów i hrabin Flandrii. Rzeźby te zostały wykonane w
+                    latach 60. XIX wieku i zastępują oryginały, które zostały zniszczone w 1792 roku przez
+                    okupacyjną armię francuską. Innym ważnym budynkiem znajdującym się przy tym placu jest Bazylika
+                    Krwi Chrystusa. To w tej świątyni przechowywane są relikwie Krwi Chrystusa.</p>
+            </div>
+        </div>
+
+
+        <!-- Plac Jana van Eycka -->
+        <div class="row" id="eyck">
+            <div class="col-lg-6">
+                <img src="/images/plac_jana.JPG" alt="" class="high" />
+            </div>
+            <div class="col-lg-6">
+                <h3>Plac Jana van Eyck’a</h3>
+                <p>Idąc na północny-wschód od placu Markt, można dotrzeć do placu Jana van Eycka. Znajduje się on na
+                    końcu kanału, który kiedyś stanowił najruchliwszą przystań w Brugii. Plac otaczają urokliwe
+                    uliczki, które zawdzięczają swój wdzięk klasycznej zabudowie szeregowej, pochodzącej z czasów, w
+                    których Brugia była w rozkwicie. Jan van Eyck był związany z ty miastem. Liczne z jego dzieł
+                    znajdowały się w lokalnych kościołach. Po śmierci malarza jego ciało złożono w kościele świętego
+                    Donacjana w Brugii, który niestety zburzono w 1800 roku.</p>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- Obikety sakralne -->
+    <div class="container-fluid">
+        <!-- NMP kościół -->
+        <div class="row" id="lady">
+            <div class="col-lg-6">
+                <img src="/images/our_lady.jpg" alt="" class="high" />
+            </div>
+            <div class="col-lg-6">
+                <h3>Kościół Najświętszej Marii Panny </h3>
+                <p>Kościół Najświętszej Marii Panny stanowi ważny element krajobrazu miasta. Posiada najwyższą wieżę
+                    w mieście, która mierzy 115 metrów wysokości. Kościół jest masywnym budynkiem, który jest
+                    charakterystyczny ze względu na to, że jego poszczególne fragmenty pochodzą z różnych okresów i
+                    reprezentują odmienne style architektoniczne. Wewnątrz kościoła znajduje się wiele zabytkowych
+                    dzieł, jednak największym skarbem świątyni jest marmurowy posąg „Madonny z Dzieciątkiem”
+                    autorstwa Michała Anioła. Powstanie tej rzeźby datuje się na początek XVI wieku. Została ona
+                    przywieziona do Brugii przez flamandzkiego kupca. „Madonna z Dzieciątkiem” była jedynym dziełem
+                    artysty, które opuściło Włochy jeszcze za jego życia. Ten posąg stanowił ogromną inspirację dla
+                    ówczesnych malarzy.</p>
+            </div>
+        </div>
+
+        <!-- Zbawiciel -->
+        <div class="row" id="zbawiciel">
+            <div class="col-lg-6">
+                <img src="/images/salvator.jpg" alt="" class="kwadrat" />
+            </div>
+            <div class="col-lg-6">
+                <h3>Katedra Świętego Zbawiciela</h3>
+                <p>Jest to najstarszy parafialny kościół w Brugii. Jego budowę rozpoczęto już w XII wieku.
+                    Początkowo nie był przeznaczony na katedrę, dlatego w następnych stuleciach, po pożarze kościoła
+                    i uzyskaniu przez Belgię niepodległości, stwierdzono, że trzeba przebudować świątynię, tak aby
+                    dostosować ją do nowej roli. W związku z tym dobudowano do niego wysoką neoromańską wieżę, która
+                    mierzy 99 metrów wysokości. We wnętrzu kościoła znajduje się chór z organami, średniowieczne
+                    groby, kolekcja malarstwa flamandzkiego oraz gobeliny brukselskie.</p>
+            </div>
+        </div>
+
+        <!-- Beginaż -->
+        <div class="row" id="beginaz">
+            <div class="col-lg-6">
+                <img src="/images/beginaz.jpg" alt="" />
+            </div>
+            <div class="col-lg-6">
+                <h3>Beginaż</h3>
+                <p>Beginaż to niskie, pomalowane na biało budynki, które otaczają zadbany ogród. Nazwa tego miejsca
+                    jest związana ze stowarzyszeniem beginek, czyli kobiet, które poświęcały się pracy dobroczynnej
+                    i życiu religijnemu, jednak nie były one zakonnicami. Beginaż w Brugii został założony w 1245
+                    roku. Obecnie budynki te są zamieszkiwane przez siostry z Zakonu Świętego Benedykta. Beginaż
+                    jest otoczony murem i wygląda jak odosobniona wioska w centrum miasta. Wejście na jego teren
+                    umożliwiają dwie bramy. </p>
+            </div>
+        </div>
+
+        <!-- bazylika -->
+        <div class="row" id="holy">
+            <div class="col-lg-6">
+                <img src="/images/holy_blood.jpg" alt="" class="kwadrat"/>
+            </div>
+            <div class="col-lg-6">
+                <h3>Bazylika Świętej Krwi</h3>
+                <p>Bazylika Świętej Krwi znajduję się przy placu Burg. Jest podzielona na dwie części: dolną i
+                    górną. Pierwsza z nich, Dolna Kaplica, to miejsce spoczynku relikwii św. Bazylego, który był
+                    jedną z najważniejszych postaci wczesnego Kościoła Wschodniego. Górna Kaplica powstała w tym
+                    samym czasie co Dolna, czyli w XII wieku. To tu, w bocznej kaplicy w tabernakulum, przechowywany
+                    jest flakon ze Świętą Krwią Chrystusa. Stanowiący jedną z najświętszych relikwii średniowiecznej
+                    Europy, flakon ma zawierać krople krwi i wody zmytych z ciała Chrystusa przez Józefa z Arymatei.
+                    Relikwie te były darem dla jednego z flamandzkich rycerzy, który wykazał się dużą odwagą podczas
+                    drugiej krucjaty. Po pewnym czasie odkryto, że krew we flakonie wyschła, jednak w każdy piątek o
+                    osiemnastej, naczynie ponownie napełniało się cieczą. To zjawisko obserwowano do 1325 roku.
+                    Obecnie, w pierwszy poniedziałek maja z bazyliki wyrusza uroczysta Procesja Krwi Świętej,
+                    podczas której obnosi się relikwie przez miasto.</p>
+            </div>
+        </div>
+
+        <!-- kaplica -->
+        <div class="row" id="kaplica">
+            <div class="col-lg-6">
+                <img src="/images/jeruzalem.jpg" alt="" class="kwadrat" />
+            </div>
+            <div class="col-lg-6">
+                <h3>Kaplica Jerozolimska</h3>
+                <p>To prywatna kaplica należąca do włoskiej rodziny kupieckiej o nazwisku Adornes. Kaplica została
+                    poświęcona w 1429 roku. Inspiracją do jej powstania był kościół Grobu Świętego w Jerozolimie. W
+                    kaplicy znajduje się nagrobek Anselma i Małgorzaty Andores oraz relikwie Świętego Krzyża.
+                    Podkreśla to głęboką cześć, jaką rodzina darzyła Jerozolimę. Kaplicę dodatkowo wzbogacają
+                    witraże. Pomimo tego, że jest to obiekt sakralny, często odbywają się tu wykłady o sztuce oraz
+                    koncerty muzyki klasycznej. Kaplica jest przeznaczona do zwiedzania przez turystów, choć nadal
+                    jest używana przez rodzinę Adornes do różnych wydarzeń religijnych.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Parki i punkty widokowe -->
+
+    <div class="container-fluid">
+        <!-- Rozenhoeedkai -->
+        <div class="row" id="rozenhoedkaai">
+            <div class="col-lg-6">
+                <img src="/images/rosary2.jpg" alt="" />
+            </div>
+            <div class="col-lg-6">
+                <h3>Rozenhoedkaai </h3>
+                <p>Rozenhoedkaai, czyli Nabrzeże Różańca , jest jednym z najczęściej fotografowanych miejsc w
+                    Brugii. Niezależnie od pory roku zachwyca ono swoim pięknem turystów z całego świata.
+                    Rozenhoedkaai biegnie wzdłuż kanału przy ulicy Dijver. Swoją nazwę zyskało dopiero w XVIII wieku
+                    i była ona związana z tym, że w tym miejscu ustawiano stoiska z różańcami. Pochylona nad wodą
+                    brzoza, stare budynki i kanał sprawiają, że Rozenhoedkaai jest jednym z najbardziej
+                    ponadczasowych miejsc w Brugii.</p>
+            </div>
+        </div>
+
+        <!-- Minnewater -->
+        <div class="row" id="minnewater">
+            <div class="col-lg-6">
+                <img src="/images/minnewater.jpg" alt="" />
+            </div>
+            <div class="col-lg-6">
+                <h3>Minnewater</h3>
+                <p>Minnewater – zwany również Jeziorem Miłości – leży w południowej części miasta. Dawniej było to
+                    miejsce cumowania barek, które umożliwiały regularne połączenia pomiędzy Brugią i Gandawą.
+                    Obecnie Minnewater oraz znajdujący się w pobliżu park, są uznawane za najbardziej romantyczne
+                    miejsca w Brugii. Z tym jeziorem wiąże się lokalna legenda mówiąca o tragicznym w skutkach
+                    romansie Minny i Stromberga. W nawiązaniu do legendy, jeśli przejdzie się z partnerem przez most
+                    nad jeziorem, doświadczy się wiecznej miłości. Minnewater jest miejscem, gdzie można w spokoju
+                    kontemplować piękno natury.</p>
+            </div>
+        </div>
+
+        <!-- Astrid -->
+        <div class="row" id="astrid">
+            <div class="col-lg-6">
+                <img src="/images/astrid.JPG" alt="" />
+            </div>
+            <div class="col-lg-6">
+                <h3>Park Królowej Astrid</h3>
+                <p>Ten park znajduje się na wschód od Rozenhoeedkai. Nosi on imię szwedzkiej księżniczki, która
+                    wyszła za mąż za belgijskiego księcia. Była uwielbiana przez społeczeństwo. Dlatego, gdy zginęła
+                    w wypadku samochodowym w 1935 roku, wiele miejsc w Belgii zostało nazwanych jej imieniem. Jednym
+                    z nich jest właśnie park w Brugii. To bardzo urokliwe miejsce. Pomimo tego, że park leży w
+                    centrum miasta, to można tu odpocząć od tłumów turystów. Drzewa i krzewy tworzą liczne zakątki,
+                    a kolorowa altanka nadaje temu miejscu bajkowy wygląd. Ten cudowny pejzaż dodatkowo potęgują
+                    rabaty z kolorowymi kwiatami.</p>
+            </div>
+        </div>
+
+        <!-- Most -->
+        <div class="row" id="most">
+            <div class="col-lg-6">
+                <img src="/images/most.JPG" alt="" />
+            </div>
+            <div class="col-lg-6">
+                <h3>Most św. Bonifacego</h3>
+                <p>Ten most został wybudowany na początku XX wieku i jest jednym z najmłodszych mostów w mieście.
+                    Pomimo tego świetnie komponuje się ze średniowiecznym otoczeniem i jest jednym z najciekawszych
+                    miejsc, które należy odwiedzić spacerując po Brugii. Znajduje się on pomiędzy Kościołem NMP, a
+                    ogrodem należącym do posiadłości Arentshuis. Dodatkowo, można stąd obserwować kanał, którym
+                    pływają łodzie z turystami. Kamienny most oraz sąsiadujące z nimi ceglane budynki, tworzą
+                    romantyczny klimat.</p>
+            </div>
+        </div>
+
+        <!-- Jana młyn -->
+        <div class="row" id="mlyn">
+            <div class="col-lg-6">
+                <img src="/images/mlyn_jana.JPG" alt="" />
+            </div>
+            <div class="col-lg-6">
+                <h3>Młyn św. Jana</h3>
+                <p>W północno-wschodniej części miasta, wzdłuż parku Kruisvest, znajdują się 4 wiatraki. Kiedyś te
+                    młyny były ozdobą murów miejskich. Najstarszym z nich jest młyn św. Jana, który został zbudowany
+                    w 1770 roku. Od tamtej pory niezmiennie stoi w tym samym miejscu. Jako jedyny z tych wiatraków
+                    jest dostępny do zwiedzania przez turystów. Pomimo tego, że jest wiekową budowlą, nadal miele
+                    ziarno. Spacer wzdłuż wałów i pobliskiego kanału może być ciekawym sposobem na odpoczynek, a
+                    panujący tu spokój pozwoli odetchnąć od zgiełku miasta.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Budynki miejskie -->
+    <div class="container-fluid">
+        <div class="row" id="ratusz">
+            <div class="col-lg-6">
+                <img src="/images/ratusz.JPG" alt="" />
+            </div>
+            <div class="col-lg-6">
+                <h3>Ratusz i Stary Rejestr Cywilny</h3>
+                <p>Ratusz znajduje się przy Burgu. W 1127 roku Brugia otrzymała prawa miejskie. Od tamtej pory
+                    dążyła ona do osiągnięcia pełnej autonomii politycznej. Z tego powodu ratusz jest jednym z
+                    ważniejszych punktów na mapie miasta, ponieważ od 600 lat to stąd władze zarządzają miastem.
+                    Budowa ratusza trwała od 1376 do 1421. Jest on jednym z najstarszych tego typu budynków w
+                    krajach Beneluxu. Posiada on fasadę zdobioną posągami władców oraz postaci biblijnych. Na
+                    szczególną uwagę zasługuje również wnętrze budynku. Znajdująca się tam gotycka sala wyróżnia się
+                    pięknymi XIX-wiecznymi malunkami ściennymi, które przedstawiają przeszłość Brugii. Po lewej
+                    stronie znajduje się Stary Rejestr Cywilny, w którym funkcjonowało archiwum miejskie. Budynek
+                    ten został wybudowany w 1537 roku.</p>
+            </div>
+        </div>
+
+        <div class="row" id="belfort">
+            <div class="col-lg-6">
+                <img src="/images/belfort.JPG" alt="" class="high" />
+            </div>
+            <div class="col-lg-6">
+                <h3>Belfort</h3>
+                <p>Wieża Belfort dominuje nad placem Markt. Do dzisiejszych czasów stanowi najważniejszą budowlę
+                    miasta. Dzwonnica pochodzi z XIII wieku i ma 83 metry wysokości. Każdy, kto wyjdzie na jej
+                    szczyt zostanie nagrodzony piękną panoramą na miasto i jego okolice. Kiedyś takie dzwonnice
+                    służyły ostrzeganiu o zbliżającym się niebezpieczeństwie, bądź o wybuchu pożaru. W środku wieży
+                    zamontowany jest karylion. Ten instrument składa się z 47 dzwonów i wciąż jest użytkowany.
+                    Dzwonnica, u podnóży, otoczona jest sukiennicami, które kiedyś służyły jako galerie.</p>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- Stopka -->
+    <div class="jumbotron text-center">
+        <span>Sylwia Zwolińska</span><br>
+        <span>Copyright &copy; 2020</span>
+    </div>
+
+    <!-- funkcje do menu -->
+    <script src="/codes/menu.js"></script>
+    <!-- funkcje do top button -->
+    <script src="/codes/top_btn.js"></script>
+    <!-- funkcje do obrazków -->
+    <script src="/codes/list.js"></script>
+
+</body>
+
+</html>
