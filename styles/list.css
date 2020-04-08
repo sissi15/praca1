@@ -27,11 +27,13 @@ button{
 p{
     margin-left: 10%;
     margin-right: 10%;
+    margin-top: 20px;
+    text-align: left;
 }
 
-h3 {
+/* h3 {
     margin-left: 10%;
-}
+} */
 
 img {
     width: 100%;
