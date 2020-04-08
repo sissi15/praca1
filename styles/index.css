@@ -20,7 +20,9 @@ body {
   font-size: 20px;
   line-height: 1.6;
 }
-
+.container{
+  margin-top: 50px;
+}
 #mySidebar {
   background-color: #cc9b76;
   color: cornsilk;
@@ -89,16 +91,25 @@ h2 {
 h3 {
   color: #80614a;
   font-weight: bold;
+  text-align: center;
 }
-
+img{
+  width: 100%;
+  box-shadow: 0 0 5px rgb(44, 40, 40);
+}
+p{
+  padding: 10px;
+  text-align: center;
+}
+/* 
 .photos {
   width: 100%;
   box-shadow: 0 0 10px rgb(68, 5, 5);
-}
-/* .row {
+} */
+.row {
       margin-top: 2vw;
       margin-bottom: 2vw;
-  } */
+  }
 
 .jumbotron {
   background-color: #cc9b76;
@@ -110,6 +121,7 @@ h3 {
 .jumbotron > p {
   color: #ffeee0;
 }
+
 
 /* .sidebar{
     height: 100%;
