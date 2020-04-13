@@ -18,13 +18,13 @@ iframe{
   color: white;
 }
 .back_img{
-  background-image: url("images/tlo1.JPG");
+  background-image: url("/images/tlo1.JPG");
   background-color: white;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 85vh;
+  height: 100vh;
   margin-top: -10vh;
 
 }

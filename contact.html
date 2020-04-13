@@ -41,14 +41,14 @@
 
 	<div class="container">
 		<!-- wysyłanie formularza nie działa -->
-		<form action="/database/send_message.php" method="POST"> 
+		<form action="database/send_message.php" method="POST"> 
 		<!-- <form> -->
 			<!-- Wiadomość -->
 			<div class="form-group row">
-				<label for="message" class="col-lg-2 col-form-label">Wiadomość</label>
+				<label for="message_text" class="col-lg-2 col-form-label">Wiadomość</label>
 
 				<div class="col-lg-10">
-					<textarea type="text" id="message" name="message" placeholder="Napisz do nas" rows="4" cols="50"
+					<textarea type="text" id="message_text" name="message_text" placeholder="Napisz do nas" rows="4" cols="50"
 						class="form-control" required></textarea>
 				</div>
 			</div>
@@ -79,7 +79,7 @@
 			<div class="form-group row">
 				<div class="col-lg-12 d-flex justify-content-center">
 					<!-- <button type="button" class="btn btn-primary center">Basic</button> -->
-					<input type="submit" value="Wyślij" class="btn bg-secondary sub_btn">
+					<input type="submit" value="Wyślij" class="btn bg-secondary sub_btn" &wyslij>
 				</div>
 			</div>
 
