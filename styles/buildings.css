@@ -18,7 +18,7 @@ iframe{
   color: white;
 }
 .back_img{
-  background-image: url("/images/tlo1.JPG");
+  background-image: url("../images/tlo1.JPG");
   background-color: white;
   background-attachment: fixed;
   background-position: center;
