@@ -1,3 +1,4 @@
+<?php include('database/send_message.php') ?>
 <!DOCTYPE html>
 <html lang="pl">
 
@@ -27,7 +28,7 @@
 		<button onclick="w3_close()" class="w3-bar-item w3-button w3-large ">Zamknij &times;</button>
 		<a href="index.html" class="w3-bar-item w3-button linki">Strona główna</a>
         <a href="buildings.html" class="w3-bar-item w3-button linki">Zabytki</a>
-        <a href="contact.html" class="w3-bar-item w3-button linki ">Kontakt</a>
+		<a href="contact.php" class="w3-bar-item w3-button linki ">Kontakt</a>
         <a href="links.html" class="w3-bar-item w3-button linki">Bibliografia</a>
 	</div>
 
@@ -79,7 +80,8 @@
 			<div class="form-group row">
 				<div class="col-lg-12 d-flex justify-content-center">
 					<!-- <button type="button" class="btn btn-primary center">Basic</button> -->
-					<input type="submit" value="Wyślij" class="btn bg-secondary sub_btn" &wyslij>
+					<input type="submit" value="Wyślij" class="btn bg-secondary sub_btn">
+					<input type="hidden" name="form_submitted" value="1">
 				</div>
 			</div>
 
