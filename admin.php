@@ -1,4 +1,4 @@
-<?php include('database/send_message.php') ?>
+<?php include('database/login.php') ?>
 <!DOCTYPE html>
 <html lang="pl">
 
@@ -27,9 +27,9 @@
 	<div class="w3-sidebar w3-bar-block w3-animate-left w3-center" id="mySidebar">
 		<button onclick="w3_close()" class="w3-bar-item w3-button w3-large ">Zamknij &times;</button>
 		<a href="index.html" class="w3-bar-item w3-button linki">Strona główna</a>
-        <a href="buildings.html" class="w3-bar-item w3-button linki">Zabytki</a>
+		<a href="buildings.html" class="w3-bar-item w3-button linki">Zabytki</a>
 		<a href="contact.php" class="w3-bar-item w3-button linki ">Kontakt</a>
-        <a href="links.html" class="w3-bar-item w3-button linki">Bibliografia</a>
+		<a href="links.html" class="w3-bar-item w3-button linki">Bibliografia</a>
 	</div>
 
 	<!-- Page Content -->
@@ -37,41 +37,24 @@
 
 
 	<h2>
-		Kontakt
+		Panel administratora
 	</h2>
 
 	<div class="container">
-		<form action="database/send_message.php" method="POST"> 
-		<!-- <form> -->
-			<!-- Wiadomość -->
+		<p>Zaloguj się:</p>
+		<form action="database/login.php" method="POST">
+			<!-- Login -->
 			<div class="form-group row">
-				<label for="message_text" class="col-lg-2 col-form-label">Wiadomość</label>
-
+				<label for="user" class="col-lg-2 col-form-label">Login</label>
 				<div class="col-lg-10">
-					<textarea type="text" id="message_text" name="message_text" placeholder="Napisz do nas" rows="4" cols="50"
-						class="form-control" required></textarea>
+					<input type="text" id="user" name="user" placeholder="Wpisz login" class="form-control" required>
 				</div>
 			</div>
-			<!-- Imie -->
+			<!-- Hasło -->
 			<div class="form-group row">
-				<label for="fname" class="col-lg-2 col-form-label">Imię</label>
+				<label for="pass" class="col-lg-2 col-form-label">Hasło</label>
 				<div class="col-lg-10">
-					<input type="text" id="fname" name="fname" placeholder="Wpisz imię" class="form-control" required>
-				</div>
-			</div>
-			<!-- Nazwisko -->
-			<div class="form-group row">
-				<label for="lname" class="col-lg-2 col-form-label">Nazwisko</label>
-				<div class="col-lg-10">
-					<input type="text" id="lname" name="lname" placeholder="Wpisz nazwisko" class="form-control"
-						required>
-				</div>
-			</div>
-			<!-- Email -->
-			<div class="form-group row">
-				<label for="email" class="col-lg-2 col-form-label">Email</label>
-				<div class="col-lg-10">
-					<input type="email" id="email" name="email" placeholder="Wpisz email" class="form-control" required>
+					<input type="password" id="pass" name="pass" placeholder="Wpisz hasło" class="form-control" required>
 				</div>
 			</div>
 
@@ -79,8 +62,8 @@
 			<div class="form-group row">
 				<div class="col-lg-12 d-flex justify-content-center">
 					<!-- <button type="button" class="btn btn-primary center">Basic</button> -->
-					<input type="submit" value="Wyślij" class="btn bg-secondary sub_btn">
-					<input type="hidden" name="form_submitted" value="1">
+					<input type="submit" value="Zaloguj" class="btn bg-secondary sub_btn">
+					<input type="hidden" name="login_form" value="1">
 				</div>
 			</div>
 
@@ -90,7 +73,7 @@
 	<!-- Stopka -->
 	<div class="jumbotron text-center">
 		<span>Sylwia Zwolińska</span><br>
-        <span>Copyright &copy; 2020</span>
+		<span>Copyright &copy; 2020</span>
 	</div>
 
 	<!-- funkcje do menu -->
