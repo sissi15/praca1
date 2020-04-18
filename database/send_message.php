@@ -1,5 +1,4 @@
- <?php
-//dane do logowania
+<?php
 
 //Creating connection for mysqli
 include_once("autoryzacja.php");

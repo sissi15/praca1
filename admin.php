@@ -1,4 +1,6 @@
-<?php include('database/login.php') ?>
+<?php include('database/login.php');
+echo 'echo echo';
+?>
 <!DOCTYPE html>
 <html lang="pl">
 
@@ -46,14 +48,14 @@
 			<!-- Login -->
 			<div class="form-group row">
 				<label for="user" class="col-lg-2 col-form-label">Login</label>
-				<div class="col-lg-10">
+				<div class="col-lg-6">
 					<input type="text" id="user" name="user" placeholder="Wpisz login" class="form-control" required>
 				</div>
 			</div>
 			<!-- Hasło -->
 			<div class="form-group row">
 				<label for="pass" class="col-lg-2 col-form-label">Hasło</label>
-				<div class="col-lg-10">
+				<div class="col-lg-6">
 					<input type="password" id="pass" name="pass" placeholder="Wpisz hasło" class="form-control" required>
 				</div>
 			</div>
