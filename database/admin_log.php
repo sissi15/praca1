@@ -9,20 +9,21 @@ $conn = new mysqli(DB_SERVER, DB_USER, DB_PASSWORD, DB_DATABASE);
 if ($conn->connect_error) {
     die("Connection failed:" . $conn->connect_error);
 }
-if (isset($_POST ['login_form'])) {
+
+if (isset($_POST ['form_admin'])) {
 
     $user = $_POST['user'];
     $pass = $_POST['pass'];
 
-    $result = $mysqli->query("SELECT user, pass FROM admins WHERE user = '$user' AND pass = '$pass'");
+    $result = $mysqli->query("SELECT * FROM admins WHERE user = '$user' AND pass = '$pass'");
 
     if ($result > 0){
         $_SESSION['zalogowany'] = true;
         $_SESSION['login'] = $user;
-        echo "Zalogowano jako * ".$_POST["user"]." * ";
+        echo "Zalogowano";
 
         
-    //dla zalogowanego użytkownika są wyświetlane ogłoszenia
+    // dla zalogowanego użytkownika są wyświetlane ogłoszenia
     $wiadomosci="SELECT * FROM contact;";
     $wynik=mysqli->query($wiadomosci);
 

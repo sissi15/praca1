@@ -46,7 +46,6 @@
 			<!-- Wiadomość -->
 			<div class="form-group row">
 				<label for="message_text" class="col-lg-2 col-form-label">Wiadomość</label>
-
 				<div class="col-lg-10">
 					<textarea type="text" id="message_text" name="message_text" placeholder="Napisz do nas" rows="4" cols="50"
 						class="form-control" required></textarea>
