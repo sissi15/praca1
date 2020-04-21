@@ -7,7 +7,8 @@
 
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 
@@ -28,11 +29,11 @@
 
     <!-- Sidebar -->
     <div class="w3-sidebar w3-bar-block w3-animate-left w3-center" id="mySidebar">
-        <button onclick="w3_close()" class="w3-bar-item w3-button w3-large ">Zamknij &times;</button>
-        <a href="index.html" class="w3-bar-item w3-button">Strona główna</a>
-        <a href="buildings.html" class="w3-bar-item w3-button">Zabytki</a>
-        <a href="contact.html" class="w3-bar-item w3-button">Kontakt</a>
-        <a href="links.html" class="w3-bar-item w3-button">Bibliografia</a>
+        <button onclick="w3_close()" class="w3-bar-item w3-button w3-large">Zamknij &times;</button>
+        <a href="index.html" class="w3-bar-item w3-button linki">Strona główna</a>
+        <a href="buildings.html" class="w3-bar-item w3-button linki">Zabytki</a>
+        <a href="contact.php" class="w3-bar-item w3-button linki ">Kontakt</a>
+        <a href="links.html" class="w3-bar-item w3-button linki">Bibliografia</a>
     </div>
 
     <!-- Page Content -->
@@ -45,11 +46,11 @@
     </div>
 
 
-    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-angle-double-up"></i></button>
+    <!-- <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-angle-double-up"></i></button> -->
 
 
     <!-- przycisk do góry, menu na zasadzie kliknij i rozwiń , pudełka i menu odwołujące soę do id na tej samej stronie  -->
-    <div class="container-fluid">
+    <div class="container-fluid" id="places">
 
         <!-- Markt -->
         <div class="row" id="markt">
@@ -115,7 +116,7 @@
 
 
     <!-- Obikety sakralne -->
-    <div class="container-fluid">
+    <div class="container-fluid" id="church">
         <!-- NMP kościół -->
         <div class="row" id="lady">
             <div class="col-sm-5">
@@ -220,7 +221,7 @@
 
     <!-- Parki i punkty widokowe -->
 
-    <div class="container-fluid">
+    <div class="container-fluid" id="parks">
         <!-- Rozenhoeedkai -->
         <div class="row" id="rozenhoedkaai">
             <div class="col-sm-6">
@@ -319,7 +320,7 @@
     </div>
 
     <!-- Budynki miejskie -->
-    <div class="container-fluid">
+    <div class="container-fluid" id="city">
         <!-- Ratusz -->
         <div class="row" id="ratusz">
             <div class="col-sm-6">
