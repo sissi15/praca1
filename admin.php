@@ -1,4 +1,4 @@
-<!-- <?php include('database/admin_log.php'); ?> -->
+<?php include('database/loginserv.php'); ?>
 <!DOCTYPE html>
 <html lang="pl">
 
@@ -40,9 +40,9 @@
 		Panel administratora
 	</h2>
 
+	<p>Zaloguj się:</p>
 	<div class="container">
-		<p>Zaloguj się:</p>
-		<form action="database/admin_log.php" method="POST">
+		<form action="database/loginserv.php" method="POST">
 			<!-- Login -->
 			<div class="form-group row">
 				<label for="user" class="col-lg-2 col-form-label">Login</label>
@@ -56,14 +56,13 @@
 				<div class="col-lg-6">
 					<input type="password" id="pass" name="pass" placeholder="Wpisz hasło" class="form-control" required>
 				</div>
-			</div>
+			<!-- </div> -->
 
 			<!-- Wyslij -->
 			<div class="form-group row">
 				<div class="col-lg-12 d-flex justify-content-center">
-					<!-- <button type="button" class="btn btn-primary center">Basic</button> -->
-					<input type="submit" value="Zaloguj" class="btn bg-secondary sub_btn">
-					<input type="hidden" name="form_admin" value="1">
+					<input type="submit" value="Zaloguj" class="btn bg-secondary sub_btn" name='submit'>
+					<!-- <input type="hidden" name="form_admin" value="1"> -->
 				</div>
 			</div>
 
