@@ -1,5 +1,7 @@
 <?php
 
+session_start();
+
 include('autoryzacja.php');
 $conn = new mysqli(DB_SERVER, DB_USER, DB_PASSWORD, DB_DATABASE);
 
@@ -29,6 +31,9 @@ $query = mysqli_query($conn, "SELECT * FROM contact");
 <body>
     
 <div class="container">
+
+<a href="logout.php" tite="Logout" class="btn btn-secondary">Wyloguj</a>
+
   <h2>Wiadomości przesłane przez formularz</h2>           
   <table class="table table-striped">
     <thead>

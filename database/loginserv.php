@@ -3,6 +3,8 @@
 include('autoryzacja.php');
 $conn = new mysqli(DB_SERVER, DB_USER, DB_PASSWORD, DB_DATABASE);
 
+session_start();
+
 $error=''; //Variable to Store error message;
 if(isset($_POST['submit'])){
 if(empty($_POST['user']) || empty($_POST['pass'])){
@@ -17,6 +19,9 @@ $pass=$_POST['pass'];
 $query = mysqli_query($conn, "SELECT * FROM admins WHERE pass='$pass' AND user='$user'");
 $rows = mysqli_num_rows($query);
 if($rows == 1){
+
+    $_SESSION["login_in"] = true;
+
 header("Location: welcome.php"); // Redirecting to other page
 }
 else
