@@ -5,7 +5,13 @@ session_start();
 include('autoryzacja.php');
 $conn = new mysqli(DB_SERVER, DB_USER, DB_PASSWORD, DB_DATABASE);
 
-$query = mysqli_query($conn, "SELECT * FROM contact");
+$query = mysqli_query($conn, "SELECT * FROM contact WHERE checked = '0';");
+
+//dane do odpowiedzi
+// if(isset($_POST['submit'])){
+//   $answers = mysqli_query($conn, "UPDATE contact
+//   SET checked = '1' WHERE id = '.$row[0].';");
+// }
 ?>
 
 <!DOCTYPE html>
@@ -30,9 +36,9 @@ $query = mysqli_query($conn, "SELECT * FROM contact");
 </head>
 <body>
     
-<div class="container">
-
 <a href="logout.php" tite="Logout" class="btn btn-secondary">Wyloguj</a>
+
+<div class="container">
 
   <h2>Wiadomości przesłane przez formularz</h2>           
   <table class="table table-striped">
@@ -42,7 +48,7 @@ $query = mysqli_query($conn, "SELECT * FROM contact");
         <th>Nazwisko</th>
         <th>Email</th>
         <th>Wiadomość</th>
-        <th>Przeczytane</th>
+        <th>Brak odpowiedzi</th>
       </tr>
     </thead>
     <tbody>
@@ -55,12 +61,46 @@ $query = mysqli_query($conn, "SELECT * FROM contact");
             <td>'.$row[3].'</td>
             <td>'.$row[4].'</td>
             <td>'.$row[5].'</td>
-          </tr>';
-            }
+            </tr>';
+        }
+
+    ?>
+          <!-- <form action="" method="POST">
+            <input type="submit" value="Odesłano odpowiedź" class="btn bg-secondary" name='submit'>
+          </form> -->
+
+     <?php       
+            $query_ans = mysqli_query($conn, "SELECT * FROM contact WHERE checked = '1';");
     ?>
 
+  </tbody>
+  </table>
+</div>
 
-    </tbody>
+<div class="container">
+    <h2>Wiadomości z odpowiedzią</h2>           
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Imię</th>
+        <th>Nazwisko</th>
+        <th>Email</th>
+        <th>Wiadomość</th>
+      </tr>
+    </thead>
+    <tbody>
+     
+    <?php
+        while($row=mysqli_fetch_array($query_ans)){
+            echo '<tr>
+            <td>'.$row[1].'</td>
+            <td>'.$row[2].'</td>
+            <td>'.$row[3].'</td>
+            <td>'.$row[4].'</td>
+            </tr>';
+        }
+    ?>
+  </tbody>
   </table>
 </div>
 
