@@ -55,7 +55,7 @@ $query = mysqli_query($conn, "SELECT * FROM contact");
             <td>'.$row[3].'</td>
             <td>'.$row[4].'</td>
             <td>'.$row[5].'</td>
-            </tr>';
+          </tr>';
             }
     ?>
 
