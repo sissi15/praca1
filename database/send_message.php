@@ -22,9 +22,15 @@ if (isset($_POST ['form_submitted'])) {
 
 
     if ($conn->query($sql) === TRUE) {
-        echo "<h3> succcess </h3>";
+        echo '<div class="alert alert-success">
+        <strong>Success!</strong>
+      </div>';
+        header("Location: ../contact.php"); // Redirecting to other page
     } else {
-        echo "<h3> Failed </h3>";
+        echo '<div class="alert alert-danger">
+        Nie wysłano formularza.
+      </div>';
+        header("Location: ../contact.php");
     }
 }
 

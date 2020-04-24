@@ -45,16 +45,16 @@
 		<!-- <form> -->
 			<!-- Wiadomość -->
 			<div class="form-group row">
-				<label for="message_text" class="col-lg-2 col-form-label">Wiadomość</label>
-				<div class="col-lg-10">
+				<label for="message_text" class="col-12 col-sm-12 col-md-2 col-lg-2 col-xl-2 col-form-label">Wiadomość</label>
+				<div class="col-12 col-sm-12 col-md-10 col-lg-10 col-xl-10">
 					<textarea type="text" id="message_text" name="message_text" placeholder="Napisz do nas" rows="4" cols="50"
 						class="form-control" required></textarea>
 				</div>
 			</div>
 			<!-- Imie -->
 			<div class="form-group row">
-				<label for="fname" class="col-lg-2 col-form-label">Imię</label>
-				<div class="col-lg-10">
+				<label for="fname" class="col-12 col-sm-12 col-md-2 col-lg-2 col-xl-2 col-form-label">Imię</label>
+				<div class="col-12 col-sm-12 col-md-10 col-lg-10">
 					<input type="text" id="fname" name="fname" placeholder="Wpisz imię" class="form-control" required>
 				</div>
 			</div>
@@ -68,16 +68,15 @@
 			</div> -->
 			<!-- Email -->
 			<div class="form-group row">
-				<label for="email" class="col-lg-2 col-form-label">Email</label>
-				<div class="col-lg-10">
+				<label for="email" class="col-12 col-sm-12 col-md-2 col-lg-2 col-xl-2 col-form-label">Email</label>
+				<div class="col-12 col-sm-12 col-md-10 col-lg-10">
 					<input type="email" id="email" name="email" placeholder="Wpisz email" class="form-control" required>
 				</div>
 			</div>
 
 			<!-- Wyslij -->
 			<div class="form-group row">
-				<div class="col-lg-12 d-flex justify-content-center">
-					<!-- <button type="button" class="btn btn-primary center">Basic</button> -->
+				<div class="col-12 col-sm-12 col-md-12 col-lg-12 d-flex justify-content-center">
 					<input type="submit" value="Wyślij" class="btn bg-secondary sub_btn">
 					<input type="hidden" name="form_submitted" value="1">
 				</div>
