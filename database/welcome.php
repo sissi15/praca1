@@ -44,10 +44,10 @@ $query = mysqli_query($conn, "SELECT * FROM contact WHERE checked = '0';");
   <table class="table table-striped">
     <thead>
       <tr>
-        <th>Imię</th>
-        <th>Nazwisko</th>
+      <th>Imię</th>
         <th>Email</th>
         <th>Wiadomość</th>
+        <th>Data wysłania</th>
         <th>Brak odpowiedzi</th>
       </tr>
     </thead>
@@ -83,9 +83,9 @@ $query = mysqli_query($conn, "SELECT * FROM contact WHERE checked = '0';");
     <thead>
       <tr>
         <th>Imię</th>
-        <th>Nazwisko</th>
         <th>Email</th>
         <th>Wiadomość</th>
+        <th>Data otrzymania</th>
       </tr>
     </thead>
     <tbody>

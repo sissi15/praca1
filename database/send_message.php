@@ -16,9 +16,10 @@ if (isset($_POST ['form_submitted'])) {
     $last = $_POST['lname'];
     $message_text = $_POST['message_text'];
 
-    // $today = getdate(); //dodawanie daty
+    // $sql = "INSERT INTO contact(firstname, lastname, email, message_text) VALUES ('$first', '$last', '$email', '$message_text')";
+    // $sql = "INSERT INTO contact(firstname, email, message_text, dateSend) VALUES ('$first', '$email', '$message_text', '$today')";
+    $sql = "INSERT INTO contact(firstname, email, message_text, dateSend) VALUES ('$first', '$email', '$message_text', CURRENT_TIMESTAMP)";
 
-    $sql = "INSERT INTO contact(firstname, lastname, email, message_text) VALUES ('$first', '$last', '$email', '$message_text')";
 
     if ($conn->query($sql) === TRUE) {
         echo "<h3> succcess </h3>";

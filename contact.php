@@ -59,13 +59,13 @@
 				</div>
 			</div>
 			<!-- Nazwisko -->
-			<div class="form-group row">
+			<!-- <div class="form-group row">
 				<label for="lname" class="col-lg-2 col-form-label">Nazwisko</label>
 				<div class="col-lg-10">
 					<input type="text" id="lname" name="lname" placeholder="Wpisz nazwisko" class="form-control"
 						required>
 				</div>
-			</div>
+			</div> -->
 			<!-- Email -->
 			<div class="form-group row">
 				<label for="email" class="col-lg-2 col-form-label">Email</label>
