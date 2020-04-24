@@ -16,6 +16,8 @@ if (isset($_POST ['form_submitted'])) {
     $last = $_POST['lname'];
     $message_text = $_POST['message_text'];
 
+    // $today = getdate(); //dodawanie daty
+
     $sql = "INSERT INTO contact(firstname, lastname, email, message_text) VALUES ('$first', '$last', '$email', '$message_text')";
 
     if ($conn->query($sql) === TRUE) {
@@ -26,4 +28,14 @@ if (isset($_POST ['form_submitted'])) {
 }
 
 $conn->close();
+
+// CREATE TABLE `contact` (    
+//     `id` INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+//     `firstname` VARCHAR (50)  NOT NULL,
+//     `email` VARCHAR(250) NOT NULL,
+//     `message_text` TEXT NOT NULL,
+//     `dateSend` DATE DEFAULT GETDATE(),
+//     `checked` BOOLEAN DEFAULT '0'
+//     ); 
+
 ?> 
