@@ -4,20 +4,19 @@
 }
 
 body {
-  /* background-color: cornsilk; */
   color: rgb(54, 53, 53);
   font-size: 18px;
 }
-iframe{
+iframe {
   width: 100vw;
   height: 30vw;
   border: none;
   margin-bottom: -2vw;
 }
-.menu_btn{
+.menu_btn {
   color: white;
 }
-.back_img{
+.back_img {
   background-image: url("../images/ourLadyCanal.JPG");
   background-color: white;
   background-attachment: fixed;
@@ -34,7 +33,7 @@ h1 {
   color: white;
 }
 
-img{
+img {
   width: 100%;
 }
 h2 {
@@ -45,61 +44,54 @@ h2 {
 }
 
 .row {
-margin-bottom: 5%;
+  margin-bottom: 5%;
 }
 
-/* .ukryj{
-  display: none;
-} */
-
-.menu2{
+.menu2 {
   text-align: center;
 }
-p{
+p {
   padding-top: 4vw;
 }
 
-#menu_local a{
+#menu_local a {
   text-decoration: none;
   display: block;
 }
 
-
-ul{
-  /* padding-top: 5vw;  */
+ul {
   list-style: none;
 }
 
-li{
+li {
   margin-bottom: 5px;
   color: white;
   padding: 10px;
   border-radius: 10px;
-  
 }
-li:hover{
+li:hover {
   opacity: 0.8;
 }
 
-li a:hover{
+li a:hover {
   color: white;
 }
-li:nth-child(1){
-  background-color: rgb(94, 50, 10)
+li:nth-child(1) {
+  background-color: rgb(94, 50, 10);
 }
 
-li:nth-child(2){
-  background-color: chocolate
+li:nth-child(2) {
+  background-color: chocolate;
 }
 
-li:nth-child(3){
-  background-color: darkgreen
+li:nth-child(3) {
+  background-color: darkgreen;
 }
 
-li:nth-child(4){
-  background-color: darkblue
+li:nth-child(4) {
+  background-color: darkblue;
 }
 
-.container{
+.container {
   margin-top: 5%;
 }

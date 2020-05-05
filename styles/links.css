@@ -1,13 +1,14 @@
-h2, h3{
+h2,
+h3 {
   text-align: left;
   border-bottom: none;
 }
 
-#bibl{
+#bibl {
   text-align: center;
 }
 
-a{
+a {
   text-decoration: underline;
 }
 
@@ -40,45 +41,9 @@ a{
 /* #burger{
   color: white;
 } */
-li, em{
+
+li,
+em {
   font-size: 20px;
 }
 
-/* * {
-    box-sizing: border-box;
-  }
-  
-  .box-left {
-    float: left;
-  width: 50%;
-  /* padding: 50px; */
-  /* height: 100%; */
-  /* margin-bottom: 10px; */
-  /* border: black solid 3px; 
-  }
-
-  .box-right {
-    float: right;
-    width: 50%;
-    /* padding: 50px; 
-    height: 100%;
-    /* margin-bottom: 10px; 
-  }
-
-p{
-    padding: 30px;
-    text-align: center;
-}
-
-  .clearfix::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
-
-  img{
-    width: 100%;
-border: brown 3px solid;
-    /* padding: 0; */
-    /* opacity: 0.8; 
-  } */
