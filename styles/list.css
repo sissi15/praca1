@@ -13,6 +13,26 @@ body {
   /* background-color: cadetblue; */
 }
 
+.menu_btn{
+  color: white;
+}
+.back-img{
+  background-image: url("../images/swans.JPG");
+  background-color: white;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 80vh;
+  margin-top: -15vh;
+}
+
+h1 {
+  top: 40%;
+  left: 50%;
+  color: white;
+}
+
 #myBtn {
   display: none;
   position: fixed;
