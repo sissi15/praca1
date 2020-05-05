@@ -1,12 +1,17 @@
 h2, h3{
   text-align: left;
+  border-bottom: none;
+}
+
+#bibl{
+  text-align: center;
 }
 
 a{
   text-decoration: underline;
 }
 
-.background_photo{
+/* .background_photo{
   background-image: url("../images/restaurant.JPG");
   background-color: white;
   background-attachment: fixed;
@@ -15,9 +20,9 @@ a{
   background-size: cover;
   height: 70vh;
   margin-top: -15vh;
-}
+} */
 
-h1 {
+/* h1 {
   font-size: 55px;
   font-weight: bold;
   text-shadow: 2px 2px 8px black;
@@ -27,15 +32,17 @@ h1 {
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
-  /* background-color: #80614a; */
+  /* background-color: #80614a; 
   width: 100vw;
   padding: 10px;
-}
+} */
 
-#burger{
+/* #burger{
   color: white;
+} */
+li, em{
+  font-size: 20px;
 }
-
 
 /* * {
     box-sizing: border-box;

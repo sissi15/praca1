@@ -105,6 +105,7 @@ h3, h2 {
   font-weight: bold;
   text-align: center;
 }
+
 img{
   width: 100%;
   box-shadow: 0 0 5px rgb(44, 40, 40);
@@ -128,4 +129,8 @@ p{
 }
 .jumbotron > p {
   color: #ffeee0;
+}
+
+h3{
+  border-bottom: solid 2px #80614a;
 }

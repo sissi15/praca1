@@ -5,7 +5,8 @@ session_start();
 include('autoryzacja.php');
 $conn = new mysqli(DB_SERVER, DB_USER, DB_PASSWORD, DB_DATABASE);
 
-$query = mysqli_query($conn, "SELECT * FROM contact WHERE checked = '0' ORDER BY dateSend DESC;");
+$query = mysqli_query($conn, "SELECT * FROM contact ORDER BY dateSend DESC;");
+// $query = mysqli_query($conn, "SELECT * FROM contact WHERE checked = '0' ORDER BY dateSend DESC;");
 
 //dane do odpowiedzi
 // if(isset($_POST['submit'])){
@@ -31,16 +32,15 @@ $query = mysqli_query($conn, "SELECT * FROM contact WHERE checked = '0' ORDER BY
     <!-- W3 sidebar -->
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
-    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="../styles/index.css">
 
-	<title>Wiadomości</title>
+  <title>Wiadomości</title>
 </head>
 <body>
-    
+
 <a href="logout.php" tite="Logout" class="btn btn-secondary">Wyloguj</a>
 
-<div class="container">
-
+<div class="container" style="height: 80vh;">
   <h2>Wiadomości przesłane przez formularz</h2>           
   <table class="table table-striped">
     <thead>
@@ -48,8 +48,8 @@ $query = mysqli_query($conn, "SELECT * FROM contact WHERE checked = '0' ORDER BY
       <th>Imię</th>
         <th>Email</th>
         <th>Wiadomość</th>
-        <th>Data wysłania</th>
-        <th>Brak odpowiedzi</th>
+        <th>Data otrzymania</th>
+        <!-- <th>Brak odpowiedzi</th> -->
       </tr>
     </thead>
     <tbody>
@@ -61,7 +61,6 @@ $query = mysqli_query($conn, "SELECT * FROM contact WHERE checked = '0' ORDER BY
             <td>'.$row[2].'</td>
             <td>'.$row[3].'</td>
             <td>'.$row[4].'</td>
-            <td>'.$row[5].'</td>
             </tr>';
         }
 
@@ -71,14 +70,14 @@ $query = mysqli_query($conn, "SELECT * FROM contact WHERE checked = '0' ORDER BY
           </form> -->
 
      <?php       
-            $query_ans = mysqli_query($conn, "SELECT * FROM contact WHERE checked = '1';");
+            // $query_ans = mysqli_query($conn, "SELECT * FROM contact WHERE checked = '1';");
     ?>
 
   </tbody>
   </table>
 </div>
 
-<div class="container">
+<!-- <div class="container">
     <h2>Wiadomości z odpowiedzią</h2>           
   <table class="table table-striped">
     <thead>
@@ -92,18 +91,24 @@ $query = mysqli_query($conn, "SELECT * FROM contact WHERE checked = '0' ORDER BY
     <tbody>
      
     <?php
-        while($row=mysqli_fetch_array($query_ans)){
-            echo '<tr>
-            <td>'.$row[1].'</td>
-            <td>'.$row[2].'</td>
-            <td>'.$row[3].'</td>
-            <td>'.$row[4].'</td>
-            </tr>';
-        }
+        // while($row=mysqli_fetch_array($query_ans)){
+        //     echo '<tr>
+        //     <td>'.$row[1].'</td>
+        //     <td>'.$row[2].'</td>
+        //     <td>'.$row[3].'</td>
+        //     <td>'.$row[4].'</td>
+        //     </tr>';
+        // }
     ?>
   </tbody>
   </table>
-</div>
+</div> -->
+
+ <!-- Stopka -->
+ <div class="jumbotron text-center">
+        <span>Sylwia Zwolińska</span><br>
+        <span>Copyright &copy; 2020</span>
+    </div>
 
 </body>
 </html>
