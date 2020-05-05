@@ -1,0 +1,20 @@
+.home_image{
+    background-image: url("../images/dodatkowe1.JPG");
+    background-color: white;
+    background-attachment: fixed;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+    margin-top: -15vh;
+  }
+  
+  h1 {
+    top: 40%;
+    left: 50%;
+    color: white;
+  }
+  
+  .menu_btn{
+    color: white;
+  }

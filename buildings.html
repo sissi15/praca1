@@ -27,9 +27,11 @@
 
     <!-- Sidebar -->
     <div class="w3-sidebar w3-bar-block w3-animate-left w3-center" id="mySidebar">
-        <button onclick="w3_close()" class="w3-bar-item w3-button w3-large ">Zamknij &times;</button>
+        <button onclick="w3_close()" class="w3-bar-item w3-button w3-large">Zamknij &times;</button>
         <a href="index.html" class="w3-bar-item w3-button linki">Strona główna</a>
-        <a href="buildings.html" class="w3-bar-item w3-button linki">Zabytki</a>
+        <a href="history.html" class="w3-bar-item w3-button linki">Historia</a>
+        <a href="buildings.html" class="w3-bar-item w3-button linki">Mapa z zabytkami</a>
+        <a href="list.html" class="w3-bar-item w3-button linki">Opis zabytków</a>
         <a href="contact.php" class="w3-bar-item w3-button linki ">Kontakt</a>
         <a href="links.html" class="w3-bar-item w3-button linki">Bibliografia</a>
     </div>
@@ -39,14 +41,16 @@
 
     <div class="back_img">
         <h1>
-            Zabytki
+            Mapa z zabytkami
         </h1>
     </div>
 
+    <!-- <p>Kliknij w wybrany punkt na mapie, aby dowiedzieć się więcej o danym miejscu.</p> -->
 
     <div class="container">
+
         <div class="row">
-            <div class="col-lg-2" id="menu_local">
+            <div class="col-lg-3" id="menu_local">
                 <p>Oznaczenia na mapie:</p>
                 <ul>
                     <li><a href="list.html#places">Place</a></li>
@@ -54,8 +58,9 @@
                     <li><a href="list.html#parks">Parki i punkty widokowe</a></li>
                     <li><a href="list.html#city">Budynki miejskie</a></li>
                 </ul>
+                <p>Kliknij w wybrany punkt na mapie, aby dowiedzieć się więcej o danym miejscu.</p>
             </div>
-            <div class="col-lg-10">
+            <div class="col-lg-9">
 
                 <img src="images/maps_plan.PNG" usemap="#image-map" style="width: 739px; height: 653px;" alt="Mapa starówki w Brugii, gdzie widać zaznaczone najważniejsze atrakcje tego miasta.">
 

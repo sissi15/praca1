@@ -25,12 +25,13 @@
 
 	<!-- Sidebar -->
 	<div class="w3-sidebar w3-bar-block w3-animate-left w3-center" id="mySidebar">
-		<button onclick="w3_close()" class="w3-bar-item w3-button w3-large ">Zamknij &times;</button>
-		<a href="index.html" class="w3-bar-item w3-button linki">Strona główna</a>
-		<a href="buildings.html" class="w3-bar-item w3-button linki">Zabytki</a>
-		<a href="contact.php" class="w3-bar-item w3-button linki ">Kontakt</a>
-		<a href="links.html" class="w3-bar-item w3-button linki">Bibliografia</a>
-	</div>
+        <button onclick="w3_close()" class="w3-bar-item w3-button w3-large">Zamknij &times;</button>
+        <a href="index.html" class="w3-bar-item w3-button linki">Strona główna</a>
+        <a href="history.html" class="w3-bar-item w3-button linki">Historia</a>
+        <a href="buildings.html" class="w3-bar-item w3-button linki">Zabytki</a>
+        <a href="contact.php" class="w3-bar-item w3-button linki ">Kontakt</a>
+        <a href="links.html" class="w3-bar-item w3-button linki">Bibliografia</a>
+    </div>
 
 	<!-- Page Content -->
 	<button class="w3-button  " onclick="w3_open()" id="burger">☰</button>
