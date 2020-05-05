@@ -13,6 +13,7 @@
     <!-- W3 sidebar -->
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
+    <!-- CSS styles -->
     <link rel="stylesheet" href="styles/index.css">
     <link rel="stylesheet" href="styles/contact.css">
 
@@ -39,7 +40,7 @@
 
     <div class="container">
         <form action="database/send_message.php" method="POST">
-            <!-- Wiadomość -->
+            <!-- Message -->
             <div class="form-group row">
                 <label for="message_text"
                     class="col-12 col-sm-12 col-md-2 col-lg-2 col-xl-2 col-form-label">Wiadomość</label>
@@ -48,7 +49,7 @@
                         cols="50" class="form-control" required></textarea>
                 </div>
             </div>
-            <!-- Imie -->
+            <!-- Firstaname -->
             <div class="form-group row">
                 <label for="fname" class="col-12 col-sm-12 col-md-2 col-lg-2 col-xl-2 col-form-label">Imię</label>
                 <div class="col-12 col-sm-12 col-md-10 col-lg-10">
@@ -63,7 +64,7 @@
                 </div>
             </div>
 
-            <!-- Wyslij -->
+            <!-- Submit -->
             <div class="form-group row">
                 <div class="col-12 col-sm-12 col-md-12 col-lg-12 d-flex justify-content-center">
                     <input type="submit" value="Wyślij" class="btn bg-secondary sub_btn">
@@ -74,13 +75,15 @@
         </form>
     </div>
 
-    <!-- Stopka -->
+    <!-- Footer -->
     <div class="jumbotron text-center">
+        <section>Autorem niniejszego serwisu jest Sylwia Zwolińska. 
+            <br>Serwis ten stanowi integralną część pracy licencjackiej (kierunek: Elektroniczne Przetwarzanie Informacji), przygotowanej pod kierunkiem dr. hab. Grzegorza Bilińskiego, prof. ASP <br>na Wydziale Zarządzania i Komunikacji Społecznej Uniwersytetu Jagiellońskiego.</section>
         <span>Sylwia Zwolińska</span><br>
         <span>Copyright &copy; 2020</span>
     </div>
 
-    <!-- funkcje do menu -->
+    <!-- menu function -->
     <script src="codes/menu.js"></script>
 </body>
 

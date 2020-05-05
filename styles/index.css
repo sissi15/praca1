@@ -101,6 +101,9 @@ p {
 .jumbotron > p {
   color: #ffeee0;
 }
+.jumbotron section{
+  margin-bottom: 2vw;
+}
 
 h2 {
   border-bottom: solid 2px #80614a;
