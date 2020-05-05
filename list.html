@@ -7,7 +7,6 @@
 
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
@@ -18,11 +17,12 @@
     <!-- Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+    <!-- CSS styles -->
     <link rel="stylesheet" href="styles/index.css">
     <link rel="stylesheet" href="styles/buildings.css">
     <link rel="stylesheet" href="styles/list.css">
 
-    <title>Zabytki</title>
+    <title>Opis zabytków</title>
 </head>
 
 <body>
@@ -42,18 +42,17 @@
     <button class="w3-button menu_btn" onclick="w3_open()" id="burger">☰</button>
 
     <div class="back-img" id="tytul">
-        <h1>
-            Opis zabytków
-        </h1>
+        <h1>Opis zabytków</h1>
     </div>
-    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-angle-double-up"></i></button>
 
-    <!-- <div class="container-fluid" id="places"> -->
+    <!-- Go to the top - button -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-angle-double-up"></i></button>
 
     <!-- Markt -->
     <div class="container-fluid" id="markt">
         <div class="row">
             <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6">
+                <!-- Description of the monument -->
                 <h3>Markt</h3>
                 <p>Markt stanowi jeden z dwóch głównych placów w mieście. Jest otoczony urokliwymi budynkami. W
                     centralnym punkcie placu znajduje się pomnik dwóch lokalnych bohaterów, Jana Breydla oraz Pietera de
@@ -62,10 +61,11 @@
                 <p>Jednak najważniejszym elementem placu jest dzwonnica Belfort. Dzwonnica pochodzi z czasów, gdy Brugia
                     była w rozkwicie i jest symbolem obywatelskiej dumy i miejskiej niezależności. U podnóża wieży
                     znajduje się dziedziniec, na którym kiedyś odbywał się najważniejszy jarmark miejski. </p>
-                <!-- Przyciski -->
+                <!-- Buttons -->
                 <a href='https://goo.gl/maps/ZpBRydQutxQmrtgU9' class="btn btn-primary">Wirtualny spacer</a>
                 <button onclick="goBack()" class="btn btn-secondary">Wróć do mapy</button>
             </div>
+            <!-- Image -->
             <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6">
                 <img src="images/markt.JPG" alt="Plac Markt" />
             </div>
@@ -75,10 +75,12 @@
     <!-- Burg -->
     <div class="container-fluid flex-container" id="burg">
         <div class="row">
+            <!-- Image -->
             <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6">
                 <img src="images/burg.JPG" alt="Plac Burg" />
             </div>
             <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6">
+                <!-- Description of the monument -->
                 <h3>Burg</h3>
                 <p>Drugi najważniejszy plac na starym mieście. Stanowi centrum administracyjne Brugii. Znajduje się tu
                     ratusz, z pięknie zdobioną wieżyczkami fasadą. Elewacja tego budynku pochodzi z 1376 roku. Dodatkowo
@@ -87,7 +89,7 @@
                     wieku i zastępują oryginały, które zostały zniszczone w 1792 roku przez okupacyjną armię francuską.
                     Innym ważnym budynkiem znajdującym się przy tym placu jest Bazylika Krwi Chrystusa. W tej świątyni
                     przechowywane są relikwie krwi Chrystusa.</p>
-                <!-- Przyciski -->
+                <!-- Buttons -->
                 <a href='https://goo.gl/maps/hDX2nT1aLmXCKD5w8' class="btn btn-primary">Wirtualny spacer</a>
                 <button onclick="goBack()" class="btn btn-secondary">Wróć do mapy</button>
             </div>
@@ -98,6 +100,7 @@
         <!-- Plac Jana van Eycka -->
         <div class="row">
             <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-7">
+                <!-- Description of the monument -->
                 <h3>Plac Jana van Eyck’a</h3>
                 <h3><em>( niderl. Jan van Eyckplein )</em></h3>
                 <p>Idąc na północny-wschód od placu Markt, można dotrzeć do placu Jana van Eycka. Znajduje się on na
@@ -107,10 +110,11 @@
                 <p>Jan van Eyck był związany z ty miastem. Liczne z jego dzieł znajdowały się w lokalnych kościołach. Po
                     śmierci malarza jego ciało złożono w kościele świętego Donacjana w Brugii, który niestety zburzono w
                     1800 roku.</p>
-                <!-- Przyciski -->
+                <!-- Buttons -->
                 <a href='https://goo.gl/maps/aN8z2uATJyRjgHd79' class="btn btn-primary">Wirtualny spacer</a>
                 <button onclick="goBack()" class="btn btn-secondary">Wróć do mapy</button>
             </div>
+            <!-- Image -->
             <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-5">
                 <img src="images/jan_van_eyck.JPG" alt="Plac Jana van Eycka" class="high" />
             </div>
@@ -121,13 +125,15 @@
     <!-- Obikety sakralne -->
     <!-- <div class="container-fluid" id="church"> -->
 
-    <div class="container-fluid" id="church" id="lady">
+    <div class="container-fluid" id="lady">
         <!-- NMP kościół -->
         <div class="row">
+            <!-- Image -->
             <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-5">
                 <img src="images/our_lady.jpg" alt="Kościół Najświętszej Marii Panny" class="high" />
             </div>
             <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-7">
+                <!-- Description of the monument -->
                 <h3>Kościół Najświętszej Marii Panny</h3>
                 <h3><em>( niderl. Onze-Lieve-Vrouwekerk )</em></h3>
                 <p>Kościół Najświętszej Marii Panny stanowi ważny element krajobrazu miasta. Posiada najwyższą wieżę w
@@ -139,7 +145,7 @@
                     na początek XVI wieku. Została ona przywieziona do Brugii przez flamandzkiego kupca. „Madonna z
                     Dzieciątkiem” była jednym z nielicznych dzieł artysty, które opuściło Włochy jeszcze za jego życia.
                 </p>
-                <!-- Przyciski -->
+                <!-- Buttons -->
                 <a href='https://goo.gl/maps/HNxVt5k7Y6f3cXFD9' class="btn btn-primary">Wirtualny spacer</a>
                 <button onclick="goBack()" class="btn btn-secondary">Wróć do mapy</button>
             </div>
@@ -150,6 +156,7 @@
         <!-- Zbawiciel -->
         <div class="row">
             <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-7">
+                <!-- Description of the monument -->
                 <h3>Katedra Świętego Zbawiciela</h3>
                 <h3><em>( niderl. Sint-Salvatorskathedraal )</em></h3>
                 <p>Jest to najstarszy parafialny kościół w Brugii. Jego budowę rozpoczęto już w XII wieku. Początkowo
@@ -159,10 +166,11 @@
                 <p>W związku z tym dobudowano do niego wysoką neoromańską wieżę, która mierzy 99 metrów wysokości. We
                     wnętrzu katedry znajduje się chór z organami, średniowieczne groby, kolekcja malarstwa flamandzkiego
                     oraz gobeliny brukselskie.</p>
-                <!-- Przyciski -->
+                <!-- Buttons -->
                 <a href='https://goo.gl/maps/B1pdRvXbbBZoFWhA9' class="btn btn-primary">Wirtualny spacer</a>
                 <button onclick="goBack()" class="btn btn-secondary">Wróć do mapy</button>
             </div>
+            <!-- Image -->
             <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-5">
                 <img src="images/salvator.jpg" alt="Katedra Świętego Zbawiciela" />
             </div>
@@ -172,10 +180,12 @@
     <div class="container-fluid" id="beginaz">
         <!-- Beginaż -->
         <div class="row">
+            <!-- Image -->
             <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6">
                 <img src="images/begijnhof.jpg" alt="Beginaż" />
             </div>
             <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6">
+                <!-- Description of the monument -->
                 <h3>Beginaż</h3>
                 <h3><em>( niderl. Begijnhof Ten Wijngaerde )</em></h3>
                 <p>Beginaż w Brugii został założony w 1245 roku. Nazwa tego miejsca jest związana ze stowarzyszeniem
@@ -184,7 +194,7 @@
                 <p>Beginaż to niskie, pomalowane na biało budynki, które otaczają zadbany ogród. Obecnie budynki te są
                     zamieszkiwane przez siostry z Zakonu Świętego Benedykta. Beginaż jest otoczony murem i wygląda jak
                     odosobniona wioska w centrum miasta. Wejście na jego teren umożliwiają dwie bramy.</p>
-                <!-- Przyciski -->
+                <!-- Buttons -->
                 <a href='https://goo.gl/maps/ohfmDfCZPpCkzTht8' class="btn btn-primary">Wirtualny spacer</a>
                 <button onclick="goBack()" class="btn btn-secondary">Wróć do mapy</button>
             </div>
@@ -195,6 +205,7 @@
         <!-- bazylika -->
         <div class="row">
             <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-7">
+                <!-- Description of the monument -->
                 <h3>Bazylika Świętej Krwi</h3>
                 <h3><em>( niderl. Basiliek van het Heilig Bloed )</em></h3>
                 <p>Bazylika Świętej Krwi znajduję się przy placu Burg. To tu, w bocznej kaplicy w tabernakulum,
@@ -206,10 +217,11 @@
                     osiemnastej, naczynie ponownie napełniało się cieczą. To zjawisko obserwowano do 1325 roku. Obecnie,
                     w pierwszy poniedziałek maja, z bazyliki wyrusza uroczysta Procesja Krwi Świętej, podczas której
                     obnosi się relikwie przez miasto.</p>
-                <!-- Przyciski -->
+                <!-- Buttons -->
                 <a href='https://goo.gl/maps/FA7u8GDzNoGB1w5p6' class="btn btn-primary">Wirtualny spacer</a>
                 <button onclick="goBack()" class="btn btn-secondary">Wróć do mapy</button>
             </div>
+            <!-- Image -->
             <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-5">
                 <img src="images/holy_blood.jpg" alt="Bazylika Świętej Krwi" />
             </div>
@@ -219,10 +231,12 @@
     <div class="container-fluid" id="kaplica">
         <!-- kaplica -->
         <div class="row">
+            <!-- Image -->
             <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-5">
                 <img src="images/jeruzalem.jpg" alt="Kaplica Jerozolimska" />
             </div>
             <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-7">
+                <!-- Description of the monument -->
                 <h3>Kaplica Jerozolimska</h3>
                 <h3><em>( niderl. Adornesdomein - Jeruzalemkapel )</em></h3>
                 <p>To prywatna kaplica należąca do włoskiej rodziny kupieckiej o nazwisku Adornes. Kaplica została
@@ -232,7 +246,7 @@
                 <p>Pomimo tego, że jest to obiekt sakralny, często odbywają się tu wykłady o sztuce oraz koncerty muzyki
                     klasycznej. Kaplica jest przeznaczona do zwiedzania przez turystów, choć nadal jest używana przez
                     rodzinę Adornes do różnych wydarzeń religijnych.</p>
-                <!-- Przyciski -->
+                <!-- Buttons -->
                 <a href='https://goo.gl/maps/2bZJG17JBfSMBsUT6' class="btn btn-primary">Wirtualny spacer</a>
                 <button onclick="goBack()" class="btn btn-secondary">Wróć do mapy</button>
             </div>
@@ -247,6 +261,7 @@
         <!-- Rozenhoeedkai -->
         <div class="row">
             <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6">
+                <!-- Description of the monument -->
                 <h3>Rozenhoedkaai</h3>
                 <p>Rozenhoedkaai, czyli Nabrzeże Różańca , jest jednym z najczęściej fotografowanych miejsc w Brugii.
                     Niezależnie od pory roku zachwyca ono swoim pięknem turystów z całego świata. Rozenhoedkaai biegnie
@@ -254,10 +269,11 @@
                 <p>Swoją nazwę zyskało dopiero w XVIII wieku i była ona związana z tym, że w tym miejscu ustawiano
                     stoiska z różańcami. Pochylona nad wodą brzoza, stare budynki i kanał sprawiają, że Rozenhoedkaai
                     jest jednym z najbardziej ponadczasowych miejsc w Brugii.</p>
-                <!-- Przyciski -->
+               <!-- Buttons -->
                 <a href="https://goo.gl/maps/YatFw4WEWnFnBkuk9" class="btn btn-primary">Wirtulany spacer</a>
                 <button onclick="goBack()" class="btn btn-secondary">Wróć do mapy</button>
             </div>
+            <!-- Image -->
             <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6">
                 <img src="images/rosary2.jpg" alt="Rozenhoedkaai" />
             </div>
@@ -267,10 +283,12 @@
     <div class="container-fluid" id="minnewater">
         <!-- Minnewater -->
         <div class="row">
+            <!-- Image -->
             <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6">
                 <img src="images/minnewater.jpg" alt="Minnewater" />
             </div>
             <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6">
+                <!-- Description of the monument -->
                 <h3>Minnewater</h3>
                 <p>Minnewater – zwane również Jeziorem Miłości – leży w południowej części miasta. Dawniej było to
                     miejsce cumowania barek, które umożliwiały regularne połączenia pomiędzy Brugią i Gandawą. Obecnie
@@ -279,7 +297,7 @@
                 <p>W nawiązaniu do lokalnej legendy, opowiadającej o romansie Minny i Stromberga, jeśli przejdzie się z
                     partnerem przez most nad jeziorem, doświadczy się wiecznej miłości. Park Minnewater jest miejscem,
                     gdzie można w spokoju kontemplować piękno natury.</p>
-                <!-- Przyciski -->
+                <!-- Buttons -->
                 <a href='https://goo.gl/maps/KeeCzDFLkeTbqtSU7' class="btn btn-primary">Wirtualny spacer</a>
                 <button onclick="goBack()" class="btn btn-secondary">Wróć do mapy</button>
             </div>
@@ -290,6 +308,7 @@
         <!-- Astrid -->
         <div class="row">
             <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6">
+                <!-- Description of the monument -->
                 <h3>Park Królowej Astrid</h3>
                 <h3><em>( niderl. Koningin Astridpark )</em></h3>
                 <p>Ten park znajduje się na wschód od Rozenhoeedkai. Nosi on imię szwedzkiej księżniczki, która wyszła
@@ -299,10 +318,11 @@
                 <p>To bardzo urokliwe miejsce. Pomimo tego, że park leży w centrum miasta, to można tu odpocząć od
                     tłumów turystów. Drzewa i krzewy tworzą liczne zakątki, a kolorowa altanka nadaje temu miejscu
                     bajkowy wygląd. Ten cudowny pejzaż dodatkowo potęgują rabaty z kolorowymi kwiatami.</p>
-                <!-- Przyciski -->
+                <!-- Buttons -->
                 <a href='https://goo.gl/maps/UjQ4dFtpbXG2fDeq6' class="btn btn-primary">Wirtualny spacer</a>
                 <button onclick="goBack()" class="btn btn-secondary">Wróć do mapy</button>
             </div>
+            <!-- Image -->
             <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6">
                 <img src="images/astrid.JPG" alt="Park Królowej Astrid" />
             </div>
@@ -312,10 +332,12 @@
     <div class="container-fluid" id="most">
         <!-- Most -->
         <div class="row">
+            <!-- Image -->
             <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6">
                 <img src="images/bridge.JPG" alt="Most św. Bonifacego" />
             </div>
             <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6">
+                <!-- Description of the monument -->
                 <h3>Most św. Bonifacego</h3>
                 <h3><em>( niderl. Bonifaciusbrug )</em></h3>
                 <p>Ten most został wybudowany na początku XX wieku i jest jednym z najmłodszych mostów w mieście. Pomimo
@@ -324,7 +346,7 @@
                     Panny, a ogrodem należącym do posiadłości Arentshuis. Dodatkowo, można stąd obserwować kanał, którym
                     pływają łodzie z turystami. Kamienny most oraz sąsiadujące z nimi ceglane budynki, tworzą
                     romantyczny klimat.</p>
-                <!-- Przyciski -->
+                <!-- Buttons -->
                 <a href='https://goo.gl/maps/GM96sTRmABr3YBTX6' class="btn btn-primary">Wirtualny spacer</a>
                 <button onclick="goBack()" class="btn btn-secondary">Wróć do mapy</button>
             </div>
@@ -335,6 +357,7 @@
         <!-- Jana młyn -->
         <div class="row">
             <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6">
+                <!-- Description of the monument -->
                 <h3>Młyn św. Jana</h3>
                 <h3><em>( niderl. Sint-Janshuismolen )</em></h3>
                 <p>W północno-wschodniej części miasta, wzdłuż parku Kruisvest, znajdują się cztery wiatraki. Kiedyś te
@@ -343,10 +366,11 @@
                 <p>Jako jedyny spośród młynów jest dostępny do zwiedzania przez turystów. Pomimo tego, że jest wiekową
                     budowlą, nadal miele ziarno. Spacer wzdłuż wałów i pobliskiego kanału może być ciekawym sposobem na
                     odpoczynek, a panujący tu spokój pozwoli odetchnąć od zgiełku miasta</p>
-                <!-- Przyciski -->
+                <!-- Buttons -->
                 <a href='https://goo.gl/maps/EWgJW1hNuBm8WhNn9' class="btn btn-primary">Wirtualny spacer</a>
                 <button onclick="goBack()" class="btn btn-secondary">Wróć do mapy</button>
             </div>
+            <!-- Image -->
             <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6">
                 <img src="images/janshuismolen.JPG" alt="Młyn św. Jana" />
             </div>
@@ -357,10 +381,12 @@
     <div class="container-fluid" id="ratusz">
         <!-- Ratusz -->
         <div class="row">
+            <!-- Image -->
             <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6">
                 <img src="images/cityHall.jpg" alt="Ratusz i Stary Rejestr Cywilny" />
             </div>
             <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6">
+                <!-- Description of the monument -->
                 <h3>Ratusz</h3>
                 <h3><em>( niderl. Stadhuis )</em></h3>
                 <p>Ratusz znajduje się przy Burgu. W 1127 roku Brugia otrzymała prawa miejskie. Od tamtej pory dążyła
@@ -370,7 +396,7 @@
                     Beneluxu. Posiada on fasadę zdobioną posągami władców oraz postaci biblijnych. Na szczególną uwagę
                     zasługuje również wnętrze budynku. Znajdująca się tam gotycka sala wyróżnia się pięknymi
                     XIX-wiecznymi malunkami ściennymi, które przedstawiają przeszłość Brugii.</p>
-                <!-- Przyciski -->
+                <!-- Buttons -->
                 <a href='https://goo.gl/maps/Zoy4pHanrJdRcJXPA' class="btn btn-primary">Wirtualny spacer</a>
                 <button onclick="goBack()" class="btn btn-secondary">Wróć do mapy</button>
             </div>
@@ -381,6 +407,7 @@
         <!-- Belfort -->
         <div class="row">
             <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-7">
+                <!-- Description of the monument -->
                 <h3>Belfort</h3>
                 <h3><em>( niderl. Belfort van Brugge )</em></h3>
                 <p>Wieża Belfort dominuje nad placem Markt. Do dzisiejszych czasów stanowi najważniejszą budowlę miasta.
@@ -389,10 +416,11 @@
                     szczyt zostanie nagrodzony piękną panoramą na miasto i jego okolice. </p>
                 <p>W środku wieży zamontowany jest karylion. Ten instrument składa się z 47 dzwonów i wciąż jest
                     użytkowany. Dzwonnica, u podnóży, otoczona jest sukiennicami, które kiedyś służyły jako galerie.</p>
-                <!-- Przyciski -->
+                <!-- Buttons -->
                 <a href='https://goo.gl/maps/ZpBRydQutxQmrtgU9' class="btn btn-primary">Wirtualny spacer</a>
                 <button onclick="goBack()" class="btn btn-secondary">Wróć do mapy</button>
             </div>
+            <!-- Image -->
             <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-5">
                 <img src="images/belfort.JPG" alt="Wieża Belfort" class="high" />
             </div>

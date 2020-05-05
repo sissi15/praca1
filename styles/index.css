@@ -102,11 +102,11 @@ p {
   color: #ffeee0;
 }
 
-h3 {
+h2 {
   border-bottom: solid 2px #80614a;
 }
 
-section {
+.section {
   height: 100vh;
   width: 100%;
   display: table;

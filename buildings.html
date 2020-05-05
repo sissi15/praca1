@@ -7,7 +7,7 @@
 
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 
@@ -17,10 +17,11 @@
     <!-- Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+    <!-- CSS styles -->
     <link rel="stylesheet" href="styles/index.css">
     <link rel="stylesheet" href="styles/buildings.css">
 
-    <title>Zabytki</title>
+    <title>Mapa z zabytkami</title>
 </head>
 
 <body>
@@ -40,15 +41,11 @@
     <button class="w3-button  menu_btn" onclick="w3_open()" id="burger">☰</button>
 
     <div class="back_img">
-        <h1>
-            Mapa z zabytkami
-        </h1>
+        <h1>Mapa z zabytkami</h1>
     </div>
 
-    <!-- <p>Kliknij w wybrany punkt na mapie, aby dowiedzieć się więcej o danym miejscu.</p> -->
-
     <div class="container">
-
+        <!-- Aside menu -->
         <div class="row">
             <div class="col-lg-3" id="menu_local">
                 <p>Oznaczenia na mapie:</p>
@@ -60,20 +57,25 @@
                 </ul>
                 <p>Kliknij w wybrany punkt na mapie, aby dowiedzieć się więcej o danym miejscu.</p>
             </div>
+
+            <!-- City map -->
             <div class="col-lg-9">
 
-                <img src="images/maps_plan.PNG" usemap="#image-map" style="width: 739px; height: 653px;" alt="Mapa starówki w Brugii, gdzie widać zaznaczone najważniejsze atrakcje tego miasta.">
+                <img src="images/maps_plan.PNG" usemap="#image-map" style="width: 739px; height: 653px;"
+                    alt="Mapa starówki w Brugii, gdzie widać zaznaczone najważniejsze atrakcje tego miasta.">
 
                 <map name="image-map" id="image-map">
                     <!--Markt  -->
-                    <area target="_self" alt="Markt" title="Markt" href="list.html#markt" coords="306,278,15" shape="circle">
+                    <area target="_self" alt="Markt" title="Markt" href="list.html#markt" coords="306,278,15"
+                        shape="circle">
 
                     <!-- Burg -->
-                    <area target="_self" alt="Burg" title="Burg" href="list.html#burg" coords="374,280,15" shape="circle">
+                    <area target="_self" alt="Burg" title="Burg" href="list.html#burg" coords="374,280,15"
+                        shape="circle">
 
                     <!-- Minnewater -->
-                    <area target="_self" alt="Minnewater" title="Minnewater" href="list.html#minnewater" coords="342,624,15"
-                        shape="circle">
+                    <area target="_self" alt="Minnewater" title="Minnewater" href="list.html#minnewater"
+                        coords="342,624,15" shape="circle">
 
                     <!-- Beginaż -->
                     <area target="_self" alt="Beginaż" title="Beginaż" href="list.html#beginaz" coords="288,562,15"
@@ -108,12 +110,12 @@
                         coords="349,178,15" shape="circle">
 
                     <!-- Kaplica Jerozolimska -->
-                    <area target="_self" alt="Kaplica Jerozolimska" title="Kaplica Jerozolimska" href="list.html#kaplica"
-                        coords="557,146,15" shape="circle">
+                    <area target="_self" alt="Kaplica Jerozolimska" title="Kaplica Jerozolimska"
+                        href="list.html#kaplica" coords="557,146,15" shape="circle">
 
                     <!-- Młyn św. Jana -->
-                    <area target="_self" alt="Młyn św. Jana" title="Młyn św. Jana" href="list.html#mlyn" coords="642,31,15"
-                        shape="circle">
+                    <area target="_self" alt="Młyn św. Jana" title="Młyn św. Jana" href="list.html#mlyn"
+                        coords="642,31,15" shape="circle">
 
                     <!-- Katedra Świętego Zbawiciela -->
                     <area target="_self" alt="Katedra Świętego Zbawiciela" title="Katedra Świętego Zbawiciela"
@@ -129,15 +131,15 @@
     </div>
 
 
-    <!-- Stopka -->
+    <!-- Footer -->
     <div class="jumbotron text-center">
         <span>Sylwia Zwolińska</span><br>
         <span>Copyright &copy; 2020</span>
     </div>
 
-    <!-- funkcje do menu -->
+    <!-- menu function-->
     <script src="codes/menu.js"></script>
-    <!-- funkcje do top button -->
+    <!-- top button function-->
     <script src="codes/top_btn.js"></script>
 
 </body>

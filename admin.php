@@ -1,10 +1,9 @@
-<?php include('database/loginserv.php'); ?>
 <!DOCTYPE html>
 <html lang="pl">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
@@ -15,6 +14,7 @@
     <!-- W3 sidebar -->
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
+    <!-- CSS styles -->
     <link rel="stylesheet" href="styles/index.css">
     <link rel="stylesheet" href="styles/admin.css">
 
@@ -28,7 +28,8 @@
         <button onclick="w3_close()" class="w3-bar-item w3-button w3-large">Zamknij &times;</button>
         <a href="index.html" class="w3-bar-item w3-button linki">Strona główna</a>
         <a href="history.html" class="w3-bar-item w3-button linki">Historia</a>
-        <a href="buildings.html" class="w3-bar-item w3-button linki">Zabytki</a>
+        <a href="buildings.html" class="w3-bar-item w3-button linki">Mapa z zabytkami</a>
+        <a href="list.html" class="w3-bar-item w3-button linki">Opis zabytków</a>
         <a href="contact.php" class="w3-bar-item w3-button linki ">Kontakt</a>
         <a href="links.html" class="w3-bar-item w3-button linki">Bibliografia</a>
     </div>
@@ -36,9 +37,7 @@
     <!-- Page Content -->
     <button class="w3-button  " onclick="w3_open()" id="burger">☰</button>
 
-    <h2>
-        Panel administratora
-    </h2>
+    <h2>Panel administratora</h2>
 
     <div class="container">
         <form action="database/loginserv.php" method="POST">
@@ -49,7 +48,7 @@
                     <input type="text" id="user" name="user" placeholder="Wpisz login" class="form-control" required>
                 </div>
             </div>
-            <!-- Hasło -->
+            <!-- Password -->
             <div class="form-group row">
                 <label for="pass" class="col-12 col-sm-12 col-md-2 col-lg-2 col-form-label">Hasło</label>
                 <div class="col-12 col-sm-12 col-md-10 col-lg-10">
@@ -57,26 +56,26 @@
                         required>
                 </div>
             </div>
-
-            <!-- Wyslij -->
+            <!-- Submit -->
             <div class="form-group row">
                 <div class="col-12 col-sm-12 col-md-12 col-lg-12 d-flex justify-content-center">
                     <input type="submit" value="Zaloguj" class="btn bg-secondary sub_btn" name='submit'>
-                    <!-- <input type="hidden" name="form_admin" value="1"> -->
                 </div>
             </div>
 
         </form>
     </div>
 
-    <!-- Stopka -->
+    <!-- Footer -->
     <div class="jumbotron text-center">
         <span>Sylwia Zwolińska</span><br>
         <span>Copyright &copy; 2020</span>
     </div>
 
-    <!-- funkcje do menu -->
+    <!-- menu function -->
     <script src="codes/menu.js"></script>
 </body>
 
 </html>
+
+<?php include('database/loginserv.php'); ?>
