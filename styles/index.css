@@ -71,11 +71,23 @@ h1 {
   padding: 10px;
 }
 
+h2 {
+  border-bottom: solid 2px #80614a;
+}
+
 h3,
 h2 {
   color: #80614a;
   font-weight: bold;
   text-align: center;
+}
+
+.rightAlign{
+  text-align: right;
+}
+
+.leftAlign{
+  text-align: left;
 }
 
 img {
@@ -105,9 +117,6 @@ p {
   margin-bottom: 2vw;
 }
 
-h2 {
-  border-bottom: solid 2px #80614a;
-}
 
 .section {
   height: 100vh;

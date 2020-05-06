@@ -2,3 +2,6 @@
   width: 15vw;
   height: 5vw;
 }
+h2 {
+  border-bottom: solid 2px #80614a;
+}
