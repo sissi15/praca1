@@ -89,9 +89,15 @@ h3 {
   border-bottom: none;
 }
 
-@media screen and (max-width: 1540px){
+@media screen and (max-width: 1540px) {
   .back-img {
     height: 100vh;
     margin-top: -20vh;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .menu_btn {
+    color: black;
   }
 }

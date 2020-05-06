@@ -54,7 +54,7 @@ p {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 102vh;
+  height: 105vh;
   margin-top: -15vh;
 }
 
@@ -186,19 +186,23 @@ p {
 
 @media screen and (max-width: 1540px){
   .home-image {
-    height: 100vh;
+    height: 110vh;
     margin-top: -20vh;
+  }
+  h1 {
+    font-size: 55px;
   }
 }
 
 
 @media screen and (max-width: 768px){
   h1 {
+    font-size: 48px;
     text-align: center;
     position: absolute;
     top: 40%;
     left: 50%;
-    width: 100vw;
+    width: 105vw;
     padding: 10px;
   }
 }
