@@ -31,9 +31,9 @@ p {
   font-size: 36px;
 }
 
-.linki {
+/* .linki {
   margin-top: 2vw;
-}
+} */
 .linki:hover {
   text-decoration: none;
 }
@@ -93,6 +93,7 @@ h2 {
 img {
   width: 100%;
   box-shadow: 0 0 5px rgb(44, 40, 40);
+  height: auto;
 }
 p {
   padding: 10px;
