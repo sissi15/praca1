@@ -23,3 +23,22 @@
   .menu_btn{
     color: white;
   }
+
+  @media screen and (max-width: 1540px){
+    .home_image {
+      height: 100vh;
+      margin-top: -20vh;
+    }
+  }
+  
+
+  @media screen and (max-width: 730px){
+    .menu_btn{
+      color: black;
+    }
+    h1 {
+      top: 30%;
+      left: 50%;
+      color: white;
+    }
+  }

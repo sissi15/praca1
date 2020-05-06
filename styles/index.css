@@ -39,9 +39,10 @@ p {
 }
 
 #burger {
+  margin-top: 0 0;
   background: 0 0;
   z-index: 2;
-  font-size: 50px;
+  font-size: 48px;
   position: static;
 }
 
@@ -180,5 +181,24 @@ p {
     -webkit-transform: translateY(-5px);
     -ms-transform: translateY(-5px);
     transform: translateY(-5px);
+  }
+}
+
+@media screen and (max-width: 1540px){
+  .home-image {
+    height: 100vh;
+    margin-top: -20vh;
+  }
+}
+
+
+@media screen and (max-width: 768px){
+  h1 {
+    text-align: center;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    width: 100vw;
+    padding: 10px;
   }
 }
