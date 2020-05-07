@@ -35,7 +35,7 @@ $query = mysqli_query($conn, "SELECT * FROM contact ORDER BY dateSend DESC;");
 
     <!-- Table with messages -->
     <div class="container" style="height: 80vh;">
-        <h2>Wiadomości przesłane przez formularz</h2>
+        <h2 style="border-bottom: none;">Wiadomości przesłane przez formularz</h2>
         <table class="table table-striped">
             <thead>
                 <tr>
