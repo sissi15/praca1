@@ -31,9 +31,9 @@ p {
   font-size: 36px;
 }
 
-/* .linki {
-  margin-top: 2vw;
-} */
+.linki {
+  margin-top: 15px;
+}
 .linki:hover {
   text-decoration: none;
 }

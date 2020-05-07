@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="styles/index.css">
     <link rel="stylesheet" href="styles/admin.css">
 
-    <title>Administrator</title>
+    <title>Brugia | Administrator</title>
 </head>
 
 <body>

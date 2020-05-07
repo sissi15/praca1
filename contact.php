@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="styles/index.css">
     <link rel="stylesheet" href="styles/contact.css">
 
-    <title>Kontakt</title>
+    <title>Brugia | Kontakt</title>
 </head>
 
 <body>
