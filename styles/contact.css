@@ -1,11 +1,12 @@
 .container{
-  height: 70vh;
+  height: 60vh;
+  margin-bottom: 5vh;
 }
 
-.sub_btn {
+/* .sub_btn {
   width: 15vw;
   height: 5vw;
-}
+} */
 h2 {
   border-bottom: none;
 }

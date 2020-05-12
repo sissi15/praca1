@@ -59,7 +59,7 @@
             </div>
             <!-- Submit -->
             <div class="form-group row">
-                <div class="col-12 col-sm-12 col-md-12 col-lg-12 d-flex justify-content-center">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12 d-flex justify-content-center sub_btn">
                     <input type="submit" value="Zaloguj" class="btn bg-secondary sub_btn" name='submit'>
                 </div>
             </div>
@@ -68,12 +68,12 @@
     </div>
 
     <!-- Footer -->
-    <div class="jumbotron text-center">
+    <footer class="jumbotron text-center">
         <span>Autorem niniejszego serwisu jest Sylwia Zwolińska. 
             <br>Serwis ten stanowi integralną część pracy licencjackiej (kierunek: Elektroniczne Przetwarzanie Informacji), przygotowanej pod kierunkiem dr. hab. Grzegorza Bilińskiego, prof. ASP <br>na Wydziale Zarządzania i Komunikacji Społecznej Uniwersytetu Jagiellońskiego.</span><br>
         <span>Sylwia Zwolińska</span><br>
         <span>Copyright &copy; 2020</span>
-    </div>
+    </footer>
 
     <!-- menu function -->
     <script src="codes/menu.js"></script>
