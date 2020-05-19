@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -46,8 +47,8 @@
                 <label for="message_text"
                     class="col-12 col-sm-12 col-md-2 col-lg-2 col-xl-2 col-form-label">Wiadomość</label>
                 <div class="col-12 col-sm-12 col-md-10 col-lg-10 col-xl-10">
-                    <textarea id="message_text" name="message_text" placeholder="Napisz do nas" rows="4"
-                        cols="50" class="form-control" required></textarea>
+                    <textarea id="message_text" name="message_text" placeholder="Napisz do nas" rows="4" cols="50"
+                        class="form-control" required></textarea>
                 </div>
             </div>
             <!-- Firstaname -->
@@ -78,8 +79,10 @@
 
     <!-- Footer -->
     <footer class="jumbotron text-center">
-        <span>Autorem niniejszego serwisu jest Sylwia Zwolińska. 
-            <br>Serwis ten stanowi integralną część pracy licencjackiej (kierunek: Elektroniczne Przetwarzanie Informacji), przygotowanej pod kierunkiem dr. hab. Grzegorza Bilińskiego, prof. ASP <br>na Wydziale Zarządzania i Komunikacji Społecznej Uniwersytetu Jagiellońskiego.</span><br>
+        <span>Autorem niniejszego serwisu jest Sylwia Zwolińska.
+            <br>Serwis ten stanowi integralną część pracy licencjackiej (kierunek: Elektroniczne Przetwarzanie
+            Informacji), przygotowanej pod kierunkiem dr. hab. Grzegorza Bilińskiego, prof. ASP <br>na Wydziale
+            Zarządzania i Komunikacji Społecznej Uniwersytetu Jagiellońskiego.</span><br>
         <span>Sylwia Zwolińska</span><br>
         <span>Copyright &copy; 2020</span>
     </footer>

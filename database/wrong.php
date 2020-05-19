@@ -21,15 +21,11 @@
 <body>
 
 <div class="container">
-<h2 style="color: red; padding: 10vh;">Nieprawidłowe dane logowania</h2>
+<h2 style="color: red; padding: 10vh;">Nieprawidłowe dane logowania.</h2>
 <div class="row">
     <div class="col-12"><a href="../admin.php" class="btn btn-secondary btn-lg d-flex justify-content-center">Spróbuj ponownie</a></div>
 </div>
 </div>
-
-
-
-
 
 <!-- Footer -->
 <footer class="jumbotron text-center">

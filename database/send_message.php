@@ -29,13 +29,4 @@ if (isset($_POST ['form_submitted'])) {
 
 $conn->close();
 
-// CREATE TABLE `contact` (    
-//     `id` INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
-//     `firstname` VARCHAR (50)  NOT NULL,
-//     `email` VARCHAR(250) NOT NULL,
-//     `message_text` TEXT NOT NULL,
-//     `dateSend` DATE DEFAULT GETDATE(),
-//     `checked` BOOLEAN DEFAULT '0'
-//     ); 
-
 ?>

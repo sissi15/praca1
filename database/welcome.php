@@ -17,7 +17,7 @@
     <!-- CSS styles -->
     <link rel="stylesheet" href="../styles/index.css">
 
-    <title>Wiadomości</title>
+    <title>Brugia | Wiadomości</title>
 </head>
 
 <!-- Database connection -->

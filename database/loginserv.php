@@ -24,7 +24,6 @@ if(isset($_POST['submit'])){
         else
         {
             header("Location: wrong.php");
-            // $error = "Username of Password is Invalid";
         }
     mysqli_close($conn); // Closing connection
     }
