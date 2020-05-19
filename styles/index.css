@@ -21,9 +21,13 @@ p {
   color: cornsilk;
   display: none;
   z-index: 2;
-  font-size: 36px;
+  font-size: 34px;
 }
-
+#close_btn{
+font-size: 24px;
+color: black;
+padding: 20px;
+}
 .linki {
   margin-top: 15px;
 }
@@ -108,6 +112,10 @@ p {
 .jumbotron span {
   margin-bottom: 2vw;
   font-size: 16px;
+}
+
+.outsideLink{
+  text-decoration: underline;
 }
 
 .section {

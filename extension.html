@@ -25,9 +25,9 @@
 
     <!-- Sidebar -->
     <div class="w3-sidebar w3-bar-block w3-animate-left w3-center" id="mySidebar">
-        <button onclick="w3_close()" class="w3-bar-item w3-button w3-large">Zamknij &times;</button>
+        <button onclick="w3_close()" class="w3-bar-item w3-button" id="close_btn">Zamknij &times;</button>
         <a href="index.html" class="w3-bar-item w3-button linki">Strona główna</a>
-        <a href="history.html" class="w3-bar-item w3-button linki">Historia</a>
+        <a href="history.html" class="w3-bar-item w3-button linki">Historia i legenda</a>
         <a href="buildings.html" class="w3-bar-item w3-button linki">Mapa z zabytkami</a>
         <a href="list.html" class="w3-bar-item w3-button linki">Opis zabytków</a>
         <a href="extension.html" class="w3-bar-item w3-button linki">Przydatne linki</a>

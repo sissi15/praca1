@@ -33,6 +33,14 @@ h1 {
   color: white;
 }
 
+h2 {
+  border-bottom: solid 2px #80614a;
+}
+
+.leftAlign {
+  text-align: left;
+}
+
 img {
   width: 100%;
 }

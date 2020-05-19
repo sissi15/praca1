@@ -24,9 +24,9 @@
 
     <!-- Sidebar -->
     <div class="w3-sidebar w3-bar-block w3-animate-left w3-center" id="mySidebar">
-        <button onclick="w3_close()" class="w3-bar-item w3-button w3-large">Zamknij &times;</button>
+        <button onclick="w3_close()" class="w3-bar-item w3-button" id="close_btn">Zamknij &times;</button>
         <a href="index.html" class="w3-bar-item w3-button linki">Strona główna</a>
-        <a href="history.html" class="w3-bar-item w3-button linki">Historia</a>
+        <a href="history.html" class="w3-bar-item w3-button linki">Historia i legenda</a>
         <a href="buildings.html" class="w3-bar-item w3-button linki">Mapa z zabytkami</a>
         <a href="list.html" class="w3-bar-item w3-button linki">Opis zabytków</a>
         <a href="extension.html" class="w3-bar-item w3-button linki">Przydatne linki</a>
@@ -38,17 +38,31 @@
     <button class="w3-button  menu_btn " onclick="w3_open()" id="burger">☰</button>
 
     <div class="home_image" id="home">
-        <h1>Historia miasta</h1>
+        <h1>Historia i legenda</h1>
     </div>
 
     <div class="container">
-
+        <h2>Historia</h2>
         <!-- City name - origin -->
-        <h3 class="rightAlign">Nazwa miejscowości</h3>
+        <!-- <h3 class="rightAlign">Historia</h3> -->
         <div class="row">
             <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
                 <img src="images/canals3.JPG" alt="Kanały wodne" class="hide">
             </div>
+            <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                <p>W średniowieczu dostęp do morza zapewniał Brugii <a href="https://en.wikipedia.org/wiki/Zwin" class="outsideLink" target="_blank">Zwin</a>, który wówczas tworzył duży zalew i wdzierał
+                    się w głąb lądu na długość 25 kilometrów. Dzięki temu Brugia stanowiła największy port nadmorski
+                    północnej Europy i mogła prowadzić swobodny handel z innymi państwami.</p>
+                <p>Flandria słynęła z tkactwa. Dzięki sprawnej komunikacji lądowej i rzecznej, ta kraina geograficzna
+                    mogła swobodnie rozwijać się w kierunku przemysłu tekstylnego. Tkaniny z Flandrii były wówczas znane
+                    nad Morzem Śródziemnym, a nawet w Skandynawii.</p>
+                
+            </div>
+        </div>
+
+        <!-- History -->
+        <h3 class="leftAlign">Nazwa miejscowości</h3>
+        <div class="row">
             <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
                 <p>Nie ma jednoznacznej wersji dotyczącej pochodzenia nazwy tej miejscowości. Po raz pierwszy użyto jej
                     na monetach, które pochodzą z okresu między 864 a 898 rokiem. Wybito na nich słowa: Bruggas,
@@ -58,19 +72,6 @@
                     oznacza <em>most</em>. Innym wariantem jest ten, który odwołuje się do rzeki Reie, która kiedyś
                     przepływała przez Brugię. Jej nazwa wywodzi się od celtyckiego słowa Rogia. Późniejsze ewolucje tej
                     nazwy, Rogia lub Ryggia, mogłyby stanowić podstawę do powstania nazwy Brugge.</p>
-            </div>
-        </div>
-
-        <!-- History -->
-        <h3 class="leftAlign">Historia</h3>
-        <div class="row">
-            <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
-                <p>W średniowieczu dostęp do morza zapewniał Brugii Zwin, który wówczas tworzył duży zalew i wdzierał
-                    się w głąb lądu na długość 25 kilometrów. Dzięki temu Brugia stanowiła największy port nadmorski
-                    północnej Europy i mogła prowadzić swobodny handel z innymi państwami.</p>
-                <p>Flandria słynęła z tkactwa. Dzięki sprawnej komunikacji lądowej i rzecznej, ta kraina geograficzna
-                    mogła swobodnie rozwijać się w kierunku przemysłu tekstylnego. Tkaniny z Flandrii były wówczas znane
-                    nad Morzem Śródziemnym, a nawet w Skandynawii.</p>
             </div>
             <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
                 <img src="images/brama.JPG" alt="Brama prowadząca do beginażu i most nad kanałem">
@@ -84,7 +85,7 @@
             </div>
             <div class="col-12 col-sm-12 col-md-12 col-lg-7 col-xl-8">
 
-                <h3 class="rightAlign">Wojna stuletnia</h3>
+                <h3 class="rightAlign">Wydarzenia po wojnie stuletniej</h3>
                 <p>Po wybuchu wojny stuletniej pomiędzy Francją i Anglią, hrabiowie Flandrii poparli stronę francuską. W
                     związku z tym Anglia wstrzymała dostawy wełny, co spotkało się ze sporym oburzeniem flamandzkich
                     tkaczy, dla których było to jedynym źródłem utrzymania. Rosnące bezrobocie sprawiło, że w mieście
@@ -98,29 +99,6 @@
                     doprowadziło do upadku Brugii, którą wówczas nazwano Martwą Brugią.</p>
             </div>
         </div>
-
-        <!-- Old town -->
-        <div class="row">
-            <div class="col-12 col-sm-12 col-md-12 col-lg-7 col-xl-8">
-                <h3 class="leftAlign">Starówka</h3>
-                <p>Pomimo tego, że Brugia przestała stanowić ważny ośrodek handlowy, to nadal wyróżniała się spośród
-                    innych miast. Zachowała swój średniowieczny koloryt, który nadaje jej niepowtarzalny urok. Cała
-                    zabudowa starego miasta sprawia, że Brugię można określić mianem zabytku architektonicznego.
-                    Wyjątkowość tego miejsca podkreśla również fakt, że starówka, pomimo wybuchu wojen, nie została
-                    zniszczona na przestrzeni kolejnych wieków.</p>
-                <h3 class="leftAlign">Muzea</h3>
-                <p>Brugia posiada również ogromną ilość zbiorów muzealnych. Znajdują się tu dzieła słynnych flamandzkich
-                    malarzy, m.in. Jana van Eycka, Hansa Memlinga oraz Hieronima Boscha. Dodatkowo w kościołach również
-                    można znaleźć niezwykłe dzieła ówczesnych artystów. W Kościele Najświętszej Marii Panny znajduje się
-                    rzeźba Michała Anioła „Madonna z dzieciątkiem”. W Gruuthusemuseum znajdują się nie tylko obrazy.
-                    Można tu podziwiać zabytkowe gobeliny, chińską porcelanę i witraże. W Sint-Janshospitaal znajdują
-                    się dzieła Memlinga, m.in. Tryptyk Mistyczne zaślubiny św. Katarzyny i Relikwiarz św. Urszuli.</p>
-            </div>
-            <div class="col-12 col-sm-12 col-md-12 col-lg-5 col-xl-4">
-                <img src="images/oldBuilding2.jpg" alt="Stara kamienica nad kanałem wodnym">
-            </div>
-        </div>
-
 
         <div class="container">
             <!-- Legend - swans -->

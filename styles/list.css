@@ -83,7 +83,9 @@ h2 {
 h3 {
   border-bottom: none;
 }
-
+.outsideLink{
+  text-decoration: underline;
+}
 @media screen and (max-width: 1540px) {
   .back-img {
     height: 100vh;

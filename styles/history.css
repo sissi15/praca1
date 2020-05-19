@@ -24,6 +24,9 @@ h3 {
   color: white;
 }
 
+.outsideLink{
+  text-decoration: underline;
+}
 @media screen and (max-width: 1540px) {
   .home_image {
     height: 100vh;

@@ -28,9 +28,9 @@
 
     <!-- Sidebar -->
     <div class="w3-sidebar w3-bar-block w3-animate-left w3-center" id="mySidebar">
-        <button onclick="w3_close()" class="w3-bar-item w3-button w3-large">Zamknij &times;</button>
+        <button onclick="w3_close()" class="w3-bar-item w3-button" id="close_btn">Zamknij &times;</button>
         <a href="index.html" class="w3-bar-item w3-button linki">Strona główna</a>
-        <a href="history.html" class="w3-bar-item w3-button linki">Historia</a>
+        <a href="history.html" class="w3-bar-item w3-button linki">Historia i legenda</a>
         <a href="buildings.html" class="w3-bar-item w3-button linki">Mapa z zabytkami</a>
         <a href="list.html" class="w3-bar-item w3-button linki">Opis zabytków</a>
         <a href="extension.html" class="w3-bar-item w3-button linki">Przydatne linki</a>
@@ -46,7 +46,27 @@
     </div>
 
     <div class="container">
+
+        <div class="row">
+            <div class="col-12">
+                <h2 class="leftAlign">Starówka</h2>
+                <p>Pomimo tego, że Brugia przestała stanowić ważny ośrodek handlowy, to nadal wyróżniała się spośród
+                    innych miast. Zachowała swój średniowieczny koloryt, który nadaje jej niepowtarzalny urok. Cała
+                    zabudowa starego miasta sprawia, że Brugię można określić mianem zabytku architektonicznego.
+                    Wyjątkowość tego miejsca podkreśla również fakt, że starówka, pomimo wybuchu wojen, nie została
+                    zniszczona na przestrzeni kolejnych wieków.</p>
+                <p>Aby zobaczyć mapę starówki oraz okolicy, kliknij w przycisk.
+                <a href="https://www.google.com/maps/d/drive?state=%7B%22ids%22%3A%5B%2215Tfniw00LYIhgexM8u5aX4TiuKSbvXhf%22%5D%2C%22action%22%3A%22open%22%2C%22userId%22%3A%22108161947730488444625%22%7D&usp=sharing"
+                    target="_blank" class="btn btn-secondary w3-large">Mapa miasta</a></p>
+            </div>
+        </div>
         <!-- Aside menu -->
+        <div class="row">
+            <div class="col-12" id="map">
+            <h2 class="leftAlign">Mapa</h2>
+            <p>Kliknij w wybrany punkt na mapie, aby dowiedzieć się więcej o danym miejscu.</p>
+        </div>
+        </div>
         <div class="row">
             <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-3" id="menu_local">
                 <p>Oznaczenia na mapie:</p>
@@ -56,7 +76,6 @@
                     <li>Parki i punkty widokowe</li>
                     <li>Budynki miejskie</li>
                 </ul>
-                <p>Kliknij w wybrany punkt na mapie, aby dowiedzieć się więcej o danym miejscu.</p>
             </div>
 
             <!-- City map -->
