@@ -45,7 +45,7 @@ padding: 20px;
 
 .home-image {
   background-image: url("../images/panorama.jpg");
-  background-color: white;
+  background-color: #774d2d;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
