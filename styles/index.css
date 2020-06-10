@@ -23,10 +23,10 @@ p {
   z-index: 2;
   font-size: 34px;
 }
-#close_btn{
-font-size: 24px;
-color: black;
-padding: 20px;
+#close_btn {
+  font-size: 24px;
+  color: black;
+  padding: 20px;
 }
 .linki {
   margin-top: 15px;
@@ -114,7 +114,7 @@ p {
   font-size: 16px;
 }
 
-.outsideLink{
+.outsideLink {
   text-decoration: underline;
 }
 
